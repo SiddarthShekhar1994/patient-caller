@@ -6,7 +6,7 @@ It runs on LiveKit Agents in pipeline mode: Deepgram for speech-to-text, OpenAI 
 
 The bot can only dial one number, the clinic's test line. That number is hard-coded in `caller/config.py` and checked again right before every dial.
 
-Status: Phase 0, setup only. Placing calls starts in Phase 1.
+Status: Phase 1. The bot places one call and prints a live transcript. Recording comes in Phase 2.
 
 ## Install (Windows PowerShell)
 
@@ -81,3 +81,25 @@ If it doesn't ring, check these in order:
 5. The account is upgraded and US geo permissions are on.
 
 To fix a value on the LiveKit side without starting over: `lk sip outbound update --id 'ST_xxxx' --auth-pass 'new-password'` (same pattern for `--address` and `--numbers`).
+
+If Twilio rejects a number you bought with error 21210 or 32204 ("not yet verified" / "Caller ID is unauthorized"), open Monitor > Debugger in the Twilio Console. The request inspector shows the exact From number Twilio received. In my case it was correct and the number itself was stuck, so buying a fresh number fixed it.
+
+## Placing a call
+
+Two PowerShell windows, both in the repo folder with the venv active.
+
+Window 1, start the worker and leave it running:
+
+```powershell
+py -m caller worker
+```
+
+Wait for a line saying the worker registered. Window 2, place a call:
+
+```powershell
+py -m caller run --scenario new_patient_booking
+```
+
+The live transcript prints in window 1, timed from the moment the clinic picks up. Window 2 says "Call ended." when the room closes. Stop the worker with Ctrl+C.
+
+Scenarios live in `scenarios/*.yaml`. The number dialed is never read from them. It's a constant in `caller/config.py`.

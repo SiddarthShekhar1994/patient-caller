@@ -13,6 +13,12 @@ from dotenv import load_dotenv
 
 CLINIC_NUMBER = "+18054398008"
 
+# The worker registers under this name; `py -m caller run` dispatches to it.
+AGENT_NAME = "patient-caller"
+
+# Hard stop for a call, counted from when the clinic picks up.
+CALL_TIME_LIMIT_S = 240
+
 _E164 = re.compile(r"^\+[1-9]\d{7,14}$")
 
 _REQUIRED = (

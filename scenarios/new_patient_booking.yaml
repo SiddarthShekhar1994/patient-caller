@@ -1,0 +1,14 @@
+id: new_patient_booking
+title: New patient books a routine checkup, flexible on dates
+persona:
+  name: Maria Delgado
+  dob: March 4, 1988
+  phone: 555-0142
+  insurance: Blue Shield PPO
+  style: warm, a bit chatty, says "oh perfect" when things work out
+goals:
+  - Say you're a new patient and want to book a routine checkup.
+  - Take the first reasonable slot in the next two weeks; mornings are a little better.
+  - Before hanging up, confirm the day and time back to them.
+done_when: An appointment is booked and you've repeated the day and time back.
+notes: Watch whether the agent collects new-patient details and gives a clear confirmation.
