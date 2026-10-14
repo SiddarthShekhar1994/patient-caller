@@ -46,11 +46,14 @@ Twilio moves its console menus around now and then. If a name below doesn't matc
 
 Use single quotes in PowerShell. Inside double quotes, PowerShell expands anything after a `$`, which would mangle a password containing one.
 
+If `lk` isn't installed yet, run `winget install LiveKit.LiveKitCLI`, then open a new PowerShell window so it lands on your PATH.
+
 ```powershell
 lk cloud auth
+lk project list
 ```
 
-Log in through the browser, pick your project, and accept it as the default. If you'd rather paste keys: `lk project add --url 'wss://...' --api-key '...' --api-secret '...' patient-caller`.
+Log in through the browser, pick your project, and accept it as the default. `lk project list` prints the project's `wss://...livekit.cloud` URL, which is what `LIVEKIT_URL` in `.env` needs. The `https://cloud.livekit.io/projects/...` dashboard link won't work there. If you'd rather paste keys: `lk project add --url 'wss://...' --api-key '...' --api-secret '...' patient-caller`.
 
 ```powershell
 lk sip outbound create --name 'twilio-out' --address 'patient-caller-sk.pstn.twilio.com' --numbers '+1XXXXXXXXXX' --auth-user 'your-user' --auth-pass 'your-password'
