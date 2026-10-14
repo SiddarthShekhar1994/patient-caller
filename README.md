@@ -6,7 +6,7 @@ It runs on LiveKit Agents in pipeline mode: Deepgram for speech-to-text, OpenAI 
 
 The bot can only dial one number, the clinic's test line. That number is hard-coded in `caller/config.py` and checked again right before every dial.
 
-Status: Phase 1. The bot places one call and prints a live transcript. Recording comes in Phase 2.
+Status: Phase 2. Each call is recorded and transcribed into its own folder under `calls/`.
 
 ## Install (Windows PowerShell)
 
@@ -100,6 +100,15 @@ Wait for a line saying the worker registered. Window 2, place a call:
 py -m caller run --scenario new_patient_booking
 ```
 
-The live transcript prints in window 1, timed from the moment the clinic picks up. Window 2 says "Call ended." when the room closes. Stop the worker with Ctrl+C.
+The live transcript prints in window 1, timed from the moment the clinic picks up, with each reply's latency under it. Window 2 says "Call ended." when the room closes. Stop the worker with Ctrl+C.
+
+Each call lands in `calls/<date>-<time>-<scenario>/`:
+
+- `recording.ogg`: stereo, clinic on the left channel, our patient on the right
+- `transcript.txt`: `[mm:ss] AGENT:` / `[mm:ss] PATIENT:` lines, timed to match the recording
+- `transcript.json`: the same lines plus the persona, the goals and whether each was reached, and per-reply latency
+- `meta.json`: start time, duration, who hung up, providers, room name
+
+To throw away a bad call, delete its folder.
 
 Scenarios live in `scenarios/*.yaml`. The number dialed is never read from them. It's a constant in `caller/config.py`.
