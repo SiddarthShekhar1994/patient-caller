@@ -66,12 +66,19 @@ def load_config() -> Config:
     if not _E164.match(caller):
         raise SystemExit(f"CALLER_NUMBER must look like +18055550123, got {caller!r}")
 
+    url = os.environ["LIVEKIT_URL"].strip()
+    if not url.startswith("wss://") or "/projects/" in url:
+        raise SystemExit(
+            f"LIVEKIT_URL should look like wss://your-project.livekit.cloud, got {url!r}. "
+            "Run `lk project list` to see the right one."
+        )
+
     trunk = os.environ["SIP_OUTBOUND_TRUNK_ID"].strip()
     if not trunk.startswith("ST_"):
         raise SystemExit(f"SIP_OUTBOUND_TRUNK_ID should start with ST_, got {trunk!r}")
 
     return Config(
-        livekit_url=os.environ["LIVEKIT_URL"].strip(),
+        livekit_url=url,
         livekit_api_key=os.environ["LIVEKIT_API_KEY"].strip(),
         livekit_api_secret=os.environ["LIVEKIT_API_SECRET"].strip(),
         sip_trunk_id=trunk,
