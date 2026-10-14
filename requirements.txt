@@ -1,0 +1,9 @@
+livekit-agents==1.8.6
+livekit-plugins-deepgram==1.8.6
+livekit-plugins-cartesia==1.8.6
+livekit-plugins-openai==1.8.6
+livekit-plugins-silero==1.8.6
+livekit-plugins-turn-detector==1.8.6
+livekit-api==1.2.1
+python-dotenv==1.2.4
+PyYAML==6.0.3
