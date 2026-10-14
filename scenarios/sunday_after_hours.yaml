@@ -1,0 +1,14 @@
+id: sunday_after_hours
+title: Asking for a Sunday or after-hours appointment
+persona:
+  name: Emily Chen
+  dob: January 27, 1990
+  phone: 555-0189
+  insurance: Blue Shield PPO
+  style: polite but firm, works long shifts as a nurse
+goals:
+  - Ask for an appointment this Sunday morning for wrist pain; it's the only day you're free.
+  - If Sunday isn't possible, ask for a weekday after seven in the evening.
+  - If they offer anything, confirm the exact day and time back to them.
+done_when: They've booked something or clearly said those times aren't possible.
+notes: Watch whether the agent books a Sunday or late-evening slot when the clinic is closed.

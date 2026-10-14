@@ -1,4 +1,4 @@
-"""Live transcript and reply latency, timed from the start of the recording
+"""Live transcript and reply gaps, timed from the start of the recording
 (which starts the moment the clinic picks up), so a timestamp here is the
 same spot in recording.ogg.
 
@@ -24,7 +24,7 @@ class Transcript:
         self.latency: list[dict] = []
         self._started = {"user": None, "assistant": None}
         self._eou: float | None = None
-        self._ttft: float | None = None
+        self._eou_at: float | None = None
         self._txt = call_dir / "transcript.txt"
 
     def start_clock(self, t0: float) -> None:
@@ -38,8 +38,14 @@ class Transcript:
 
         @session.on("agent_state_changed")
         def _on_agent(ev) -> None:
-            if ev.new_state == "speaking" and self._started["assistant"] is None:
-                self._started["assistant"] = time.time()
+            if ev.new_state != "speaking":
+                return
+            now = time.time()
+            if self._started["assistant"] is None:
+                self._started["assistant"] = now
+            if self._eou_at is not None:
+                self._log_gap(self._eou, now - self._eou_at)
+                self._eou_at = None
 
         @session.on("conversation_item_added")
         def _on_item(ev) -> None:
@@ -55,18 +61,18 @@ class Transcript:
 
         @session.on("metrics_collected")
         def _on_metrics(ev) -> None:
-            m = ev.metrics
-            if m.type == "eou_metrics":
-                self._eou = m.end_of_utterance_delay
-            elif m.type == "llm_metrics":
-                self._ttft = m.ttft
-            elif m.type == "tts_metrics" and self._eou is not None:
-                parts = {"turn_end": self._eou, "llm": self._ttft or 0.0, "tts": m.ttfb}
-                total = sum(parts.values())
-                self.latency.append({k: round(v, 2) for k, v in {**parts, "total": total}.items()})
-                print(f"        reply latency {total:.1f}s  (turn end {parts['turn_end']:.1f}"
-                      f" + llm {parts['llm']:.1f} + tts {parts['tts']:.1f})", flush=True)
-                self._eou = self._ttft = None
+            if ev.metrics.type == "eou_metrics":
+                # Delay from the end of their speech to us deciding the turn is over.
+                self._eou = ev.metrics.end_of_utterance_delay
+                self._eou_at = time.time()
+
+    def _log_gap(self, turn_detection: float, to_audio: float) -> None:
+        """The silence the receptionist hears: end of their speech to our first audio."""
+        total = turn_detection + to_audio
+        self.latency.append({"turn_detection": round(turn_detection, 2),
+                             "llm_and_tts": round(to_audio, 2), "total": round(total, 2)})
+        print(f"        reply gap {total:.1f}s  (turn detection {turn_detection:.1f}"
+              f" + llm/tts {to_audio:.1f})", flush=True)
 
     def _add(self, speaker: str, text: str, started: float, interrupted: bool) -> None:
         offset = max(0.0, started - (self.t0 or started))

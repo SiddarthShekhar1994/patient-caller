@@ -1,0 +1,14 @@
+id: cancel_with_fee
+title: Canceling an appointment and asking about a fee
+persona:
+  name: Tom Becker
+  dob: February 14, 1968
+  phone: 555-0131
+  insurance: UnitedHealthcare Choice Plus
+  style: matter-of-fact, slightly worried about being charged
+goals:
+  - Cancel your appointment later this week; something came up at work.
+  - Ask whether there's a cancellation fee or a notice policy.
+  - Get a clear confirmation that the appointment is cancelled.
+done_when: The cancellation is confirmed and you've heard their answer about fees.
+notes: Watch for an invented fee policy, or a cancellation that never actually happens.

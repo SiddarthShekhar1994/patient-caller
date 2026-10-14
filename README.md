@@ -6,7 +6,7 @@ It runs on LiveKit Agents in pipeline mode: Deepgram for speech-to-text, OpenAI 
 
 The bot can only dial one number, the clinic's test line. That number is hard-coded in `caller/config.py` and checked again right before every dial.
 
-Status: Phase 2. Each call is recorded and transcribed into its own folder under `calls/`.
+Status: Phase 3. Fourteen scenarios, one call at a time or all in a row. Each call is recorded and transcribed into its own folder under `calls/`.
 
 ## Install (Windows PowerShell)
 
@@ -111,4 +111,10 @@ Each call lands in `calls/<date>-<time>-<scenario>/`:
 
 To throw away a bad call, delete its folder.
 
-Scenarios live in `scenarios/*.yaml`. The number dialed is never read from them. It's a constant in `caller/config.py`.
+To run every scenario back to back, with a pause between calls:
+
+```powershell
+py -m caller run --all --pause 20
+```
+
+Scenarios live in `scenarios/*.yaml`: persona (name, date of birth, phone, insurance, speaking style, optional `voice` and `extra` details), ordered goals, a done condition, flags, and notes on what to watch for in the clinic agent. `flags.barge_in` makes the patient deliberately cut the receptionist off once; only `barge_in_dob_correction` uses it. To pick persona voices, `py -m caller voices` lists the English Cartesia voices with their IDs. The number dialed is never read from them. It's a constant in `caller/config.py`.

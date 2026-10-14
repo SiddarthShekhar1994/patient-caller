@@ -1,0 +1,15 @@
+id: change_of_mind
+title: Patient switches from refill to booking and back
+persona:
+  name: Robert Alvarez
+  dob: March 11, 1972
+  phone: 555-0193
+  insurance: Cigna PPO
+  style: easygoing, a little scattered, changes topic mid-thought
+  extra: You take prescription ibuprofen, eight hundred milligrams, for your knee. Change your mind partway through like a distracted person would.
+goals:
+  - Start by asking for a refill of your ibuprofen eight hundred.
+  - Partway through, say actually your knee's been worse and ask to book an appointment instead.
+  - Once a time is offered or booked, go back and ask whether they can still send that refill too.
+done_when: You have an appointment and a clear answer about the refill.
+notes: Watch whether the agent loses the refill thread after the switch, or drops the booking.

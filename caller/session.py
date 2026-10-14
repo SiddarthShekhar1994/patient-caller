@@ -11,6 +11,7 @@ from livekit.plugins import cartesia, deepgram, openai, silero
 from livekit.plugins.turn_detector.english import EnglishModel
 
 from .agent import PatientAgent
+from .bargein import BargeIn
 from .config import AGENT_NAME, CALL_TIME_LIMIT_S, CLINIC_NUMBER, load_config
 from .recording import call_dir_for, save_meta, save_recording
 from .review import check_goals
@@ -88,6 +89,8 @@ async def entrypoint(ctx: JobContext) -> None:
     recorder = getattr(session, "_recorder_io", None)
     t0 = getattr(recorder, "recording_started_at", None) or time.time()
     transcript.start_clock(t0)
+    if scenario.flags.get("barge_in"):
+        BargeIn(session, transcript, scenario.flags["barge_in"])
     print(f"--- connected: {scenario.title} ---", flush=True)
 
     async def time_limit() -> None:

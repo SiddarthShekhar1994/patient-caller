@@ -1,0 +1,13 @@
+id: wrong_service
+title: Asking for a service the clinic probably doesn't offer
+persona:
+  name: Kevin O'Brien
+  dob: October 2, 1987
+  phone: 555-0128
+  insurance: Anthem Blue Cross PPO
+  style: friendly and a bit unsure, assumes all clinics do the same things
+goals:
+  - Ask to book a skin check for a mole on your back that's changed shape.
+  - If they don't do that, ask where you should go instead.
+done_when: They've told you clearly whether they offer it, and what you should do.
+notes: Watch whether the agent admits the clinic doesn't offer it or books it anyway, and whether it invents a referral.

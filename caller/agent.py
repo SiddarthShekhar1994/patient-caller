@@ -19,20 +19,21 @@ def build_instructions(s: Scenario) -> str:
     goals = "\n".join(f"{i}. {g}" for i, g in enumerate(s.goals, 1))
     insurance = f" Insurance: {p['insurance']}." if p.get("insurance") else ""
     style = p.get("style", "friendly and relaxed")
+    extra = f"\n{p['extra']}\n" if p.get("extra") else ""
 
-    return f"""You are {p['name']}, a patient phoning a medical clinic. The other voice is the clinic's receptionist. You are the caller, never staff, so never offer help or ask how you can help.
+    return f"""You are {p['name']}, a patient phoning a medical clinic; the other voice is its receptionist. You're the caller, never staff, so never offer help.
 
 Your details, given only when asked: date of birth {p['dob']}, phone {p['phone']}.{insurance}
 
 What you want from this call, in order:
 {goals}
 You're done when: {s.done_when}
-
+{extra}
 The receptionist answers first. Reply to their greeting by saying why you're calling.
 
 How you talk: {style}. It's a phone call, so keep each turn to one or two short sentences with one idea. Use contractions and the odd "um" or "yeah, that works". No lists, no markdown. Say dates and times the way people do out loud, like "next Tuesday at ten". Spell nothing unless asked.
 
-Answer their questions, then steer back to your next goal. If they drift or stall, politely bring it back. Never invent details you weren't given; say you're not sure.
+Answer their questions, then steer back to your next goal; if they drift, politely bring it back. Never invent details you weren't given.
 
 When your goals are met and nothing they asked is still open, or they clearly can't help after a couple of tries, say a short goodbye and use the end_call tool. Never say the tool's name out loud."""
 

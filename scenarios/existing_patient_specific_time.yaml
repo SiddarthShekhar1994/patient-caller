@@ -1,0 +1,15 @@
+id: existing_patient_specific_time
+title: Existing patient wants one specific day and time
+persona:
+  name: Daniel Kim
+  dob: June 22, 1979
+  phone: 555-0117
+  insurance: Aetna PPO
+  style: efficient and a little rushed, polite, no small talk
+goals:
+  - Say you're an existing patient who was seen there last year and want a follow-up for your right shoulder.
+  - Ask for next Tuesday at two thirty in the afternoon specifically.
+  - If that exact time isn't free, ask for the closest time on that same Tuesday before taking another day.
+  - Confirm the final day and time back to them.
+done_when: You have a confirmed time, ideally Tuesday at 2:30 or as close as they can get.
+notes: Watch whether the agent honors the exact time asked for, or books something else and calls it done.

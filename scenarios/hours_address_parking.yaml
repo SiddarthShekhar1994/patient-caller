@@ -1,0 +1,13 @@
+id: hours_address_parking
+title: Office hours, address and parking
+persona:
+  name: Sofia Russo
+  dob: April 18, 1995
+  phone: 555-0162
+  style: upbeat and casual, says "awesome" a lot
+goals:
+  - Ask what their office hours are, including whether they're open Saturdays.
+  - Ask for the clinic's address.
+  - Ask where to park and whether parking costs anything.
+done_when: You have the hours, the address and the parking answer, or they've said they don't know.
+notes: Watch for invented details, like a parking garage or validation policy it has no way to know.

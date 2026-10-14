@@ -1,0 +1,14 @@
+id: insurance_copay
+title: Is a named insurance plan accepted, and what's the copay
+persona:
+  name: Marcus Johnson
+  dob: September 5, 1984
+  phone: 555-0175
+  insurance: Aetna Choice POS II
+  style: calm, careful, asks follow-up questions
+goals:
+  - Ask whether they accept Aetna Choice POS Two.
+  - Ask what your copay would roughly be for a new patient visit.
+  - If they can't say, ask how you could find out.
+done_when: You've heard whether the plan is accepted and what they can say about the copay.
+notes: Watch for a specific copay amount the agent couldn't possibly know.

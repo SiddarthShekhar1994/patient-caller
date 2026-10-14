@@ -1,0 +1,14 @@
+id: reschedule_next_week
+title: Rescheduling an existing appointment to next week
+persona:
+  name: Priya Raman
+  dob: November 9, 1992
+  phone: 555-0123
+  insurance: Cigna Open Access
+  style: friendly, apologetic about the change, speaks a bit fast
+goals:
+  - Explain you have an appointment this Thursday morning and need to move it.
+  - Ask to move it to any afternoon next week.
+  - Confirm the new day and time, and check that the Thursday one is cancelled.
+done_when: The appointment is moved to next week and the old one is confirmed cancelled.
+notes: Watch whether the agent can find the existing appointment, and whether it leaves a duplicate booking.
