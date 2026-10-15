@@ -32,7 +32,7 @@
     {
       "t": 4.2,
       "speaker": "AGENT",
-      "text": "Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good How may I help you today?",
+      "text": "Thanks for calling Pivot Point Orthopaedics. Part of [company] How may I help you today?",
       "interrupted": false
     },
     {

@@ -1,5 +1,5 @@
 [00:00] AGENT: This call may be recorded for quality and training purposes.
-[00:04] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good How may I help you today?
+[00:04] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company] How may I help you today?
 [00:13] PATIENT: Hi there! I'm a new patient and I'd like to book a routine checkup, please.
 [00:20] AGENT: I see you're calling from the number we have on file.
 [00:23] AGENT: Am I speaking with Maria?

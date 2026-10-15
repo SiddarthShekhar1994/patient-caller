@@ -1,4 +1,4 @@
-[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good How may I help you today?
+[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company] How may I help you today?
 [00:13] PATIENT: Hi, I'm calling to check if you accept Aetna Choice POS Two insurance.
 [00:20] AGENT: You're calling from the number we have on file. Am I speaking with Maria?
 [00:24] PATIENT: No, this is Marcus Johnson. Could you tell me if you accept Aetna Choice POS Two insurance?

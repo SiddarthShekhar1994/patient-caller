@@ -22,8 +22,13 @@ _SPEAKER = {"user": "AGENT", "assistant": "PATIENT"}
 _COMPANY = re.compile(r"pretty\W*good\W*a\W?i\b|\bp\W?g\W?a\W?i\b", re.IGNORECASE)
 
 
+# Speech-to-text sometimes drops the last word of the name in "Part of ...".
+# Only that greeting is masked, since the first two words are an everyday phrase.
+_COMPANY_GREETING = re.compile(r"(part\W+of\W+)pretty\W*good\b", re.IGNORECASE)
+
+
 def redact(text: str) -> str:
-    return _COMPANY.sub("[company]", text)
+    return _COMPANY_GREETING.sub(r"\1[company]", _COMPANY.sub("[company]", text))
 
 
 class Transcript:
