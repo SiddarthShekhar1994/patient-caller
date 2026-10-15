@@ -25,6 +25,8 @@ def main() -> None:
     which.add_argument("--scenario", help=", ".join(list_scenario_ids()))
     which.add_argument("--all", action="store_true", help="every scenario, one at a time")
     run.add_argument("--pause", type=int, default=20, help="seconds between calls with --all")
+    run.add_argument("--skip-done", action="store_true",
+                     help="with --all, skip scenarios that already have a saved recording")
     sub.add_parser("voices", help="list English Cartesia voices to pick persona voices from")
     review = sub.add_parser("review", help="scan saved calls and write bug_candidates.md")
     review.add_argument("--model", help="OpenAI model for the review (default: LLM_MODEL)")
@@ -53,6 +55,12 @@ def main() -> None:
         print(f"Wrote {out.name}. Listen to each timestamp before trusting it.")
     else:
         ids = list_scenario_ids() if args.all else [args.scenario]
+        if args.skip_done:
+            from .recording import CALLS_DIR
+
+            done = {p.parent.name.split("-", 2)[-1] for p in CALLS_DIR.glob("*/recording.ogg")}
+            ids = [i for i in ids if i not in done]
+            print(f"Skipping {len(done & set(list_scenario_ids()))} done; {len(ids)} to go: {', '.join(ids)}")
         for sid in ids:
             load_scenario(sid)  # validate them all before dialing anything
         asyncio.run(_run_many(cfg, ids, args.pause))
