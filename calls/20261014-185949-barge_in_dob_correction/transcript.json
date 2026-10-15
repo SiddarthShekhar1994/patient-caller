@@ -1,0 +1,283 @@
+{
+  "scenario": "barge_in_dob_correction",
+  "title": "Patient cuts in mid-explanation to correct their date of birth",
+  "persona": {
+    "name": "Gerald Okafor",
+    "dob": "August 12, 1957",
+    "phone": "555-0108",
+    "voice": "5ee9feff-1265-424a-9d7f-8e4d431a12c7",
+    "insurance": "Medicare",
+    "style": "older, polite but brisk, a deep unhurried voice",
+    "extra": "The first time they ask your date of birth, you slip and say August twelfth, nineteen seventy-five. Don't correct it on your own; you'll catch it later."
+  },
+  "goals": [
+    {
+      "goal": "Book a follow-up visit for knee pain sometime next week.",
+      "reached": false
+    },
+    {
+      "goal": "Make sure the booking ends up under your real date of birth, August twelfth, nineteen fifty-seven.",
+      "reached": false
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.4,
+      "end": 6.8,
+      "speaker": "AGENT",
+      "text": "This call may be recorded for quality and training purposes.",
+      "interrupted": false
+    },
+    {
+      "t": 7.0,
+      "end": 9.2,
+      "speaker": "PATIENT",
+      "text": "Good morning,",
+      "interrupted": true
+    },
+    {
+      "t": 7.1,
+      "end": 12.9,
+      "speaker": "AGENT",
+      "text": "Thanks for calling Pivot Point Orthopaedics.",
+      "interrupted": false
+    },
+    {
+      "t": 13.3,
+      "end": 13.3,
+      "speaker": "AGENT",
+      "text": "Part of [company]. How may I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 14.1,
+      "end": 17.6,
+      "speaker": "PATIENT",
+      "text": "I'm calling to book a follow-up visit for my knee pain sometime next week.",
+      "interrupted": false
+    },
+    {
+      "t": 20.8,
+      "end": 25.1,
+      "speaker": "AGENT",
+      "text": "I see you're calling from the number we have on file. Am I speaking with Maria?",
+      "interrupted": false
+    },
+    {
+      "t": 25.5,
+      "end": 29.6,
+      "speaker": "PATIENT",
+      "text": "No, this is Gerald Okafor. I'd like to book that appointment for myself.",
+      "interrupted": false
+    },
+    {
+      "t": 32.0,
+      "end": 34.7,
+      "speaker": "AGENT",
+      "text": "Please provide your date of birth. Gerald.",
+      "interrupted": false
+    },
+    {
+      "t": 35.5,
+      "end": 40.7,
+      "speaker": "PATIENT",
+      "text": "It's August twelfth, nineteen seventy-five.",
+      "interrupted": false
+    },
+    {
+      "t": 47.3,
+      "end": 58.4,
+      "speaker": "PATIENT",
+      "text": "Oh, sorry, sorry, I gave you the wrong year. It's nineteen fifty-seven, not seventy-five.",
+      "interrupted": false
+    },
+    {
+      "t": 43.9,
+      "end": 65.7,
+      "speaker": "AGENT",
+      "text": "Just to confirm, is your date of birth August twelfth nineteen fifty seven?",
+      "interrupted": false
+    },
+    {
+      "t": 66.1,
+      "end": 72.9,
+      "speaker": "PATIENT",
+      "text": "Yes, that's correct, August twelfth, nineteen fifty-seven. And about that appointment for next week, is there a slot available on Tuesday in the morning?",
+      "interrupted": false
+    },
+    {
+      "t": 75.4,
+      "end": 79.2,
+      "speaker": "AGENT",
+      "text": "Before I can check the schedule, could you please spell your first and last name for me?",
+      "interrupted": false
+    },
+    {
+      "t": 80.1,
+      "end": 90.3,
+      "speaker": "PATIENT",
+      "text": "Sure, it's G-E-R-A-L-D for Gerald, and O-K-A-F-O-R for Okafor. And yes, next Tuesday in the morning works if you have something.",
+      "interrupted": false
+    },
+    {
+      "t": 92.9,
+      "end": 97.2,
+      "speaker": "AGENT",
+      "text": "To look up your record, Could you tell me the phone number you have on file with us?",
+      "interrupted": false
+    },
+    {
+      "t": 97.8,
+      "end": 107.7,
+      "speaker": "PATIENT",
+      "text": "The number you have is 555-0108. Now, about that Tuesday appointment. Do you have any openings at ten o'clock?",
+      "interrupted": false
+    },
+    {
+      "t": 107.5,
+      "end": 115.8,
+      "speaker": "AGENT",
+      "text": "I need the four number you have on file to look up your record.",
+      "interrupted": false
+    },
+    {
+      "t": 116.0,
+      "end": 116.0,
+      "speaker": "AGENT",
+      "text": "Could you provide all ten digits, please?",
+      "interrupted": false
+    },
+    {
+      "t": 116.7,
+      "end": 124.8,
+      "speaker": "PATIENT",
+      "text": "Sure, it's 555-0108. Sorry, I didn't give you the full number before. Can you check for a ten o'clock appointment next Tuesday now?",
+      "interrupted": false
+    },
+    {
+      "t": 128.5,
+      "end": 130.8,
+      "speaker": "AGENT",
+      "text": "I need the full ten digit phone number.",
+      "interrupted": false
+    },
+    {
+      "t": 131.0,
+      "end": 133.5,
+      "speaker": "AGENT",
+      "text": "Including the area code that you have on file with us.",
+      "interrupted": false
+    },
+    {
+      "t": 133.7,
+      "end": 135.6,
+      "speaker": "AGENT",
+      "text": "You say the complete number for me?",
+      "interrupted": false
+    },
+    {
+      "t": 137.4,
+      "end": 147.7,
+      "speaker": "PATIENT",
+      "text": "Yes, the full number is 555-0108, but I don't have an area code to give you. If you need it, maybe you can check with what you have on file. Is there a slot at ten next Tuesday?",
+      "interrupted": false
+    },
+    {
+      "t": 152.9,
+      "end": 166.6,
+      "speaker": "AGENT",
+      "text": "I need either your full name, date of birth, and a complete ten digit phone number, or just your name and date of birth. To look up your record. Could you please spell your first and last name for me one more time along with your date of birth?",
+      "interrupted": false
+    },
+    {
+      "t": 167.6,
+      "end": 180.7,
+      "speaker": "PATIENT",
+      "text": "Alright, it's G-E-R-A-L-D O-K-A-F-O-R, and my date of birth is August twelfth, nineteen fifty-seven. Hopefully, that helps you find my record. Now, about that appointment next Tuesday at ten?",
+      "interrupted": false
+    },
+    {
+      "t": 184.1,
+      "end": 192.4,
+      "speaker": "AGENT",
+      "text": "I can't proceed further right now. But I can make sure our clinic support team follows up with you.",
+      "interrupted": false
+    },
+    {
+      "t": 193.2,
+      "end": 193.3,
+      "speaker": "AGENT",
+      "text": "Would you like me to connect you to our patient support team?",
+      "interrupted": false
+    },
+    {
+      "t": 193.0,
+      "end": 200.0,
+      "speaker": "PATIENT",
+      "text": "No, thank you. I appreciate your help. I'll try calling back later to book that appointment. Goodbye.",
+      "interrupted": false
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_detection": 0.59,
+      "llm_and_tts": 0.13,
+      "total": 0.72
+    },
+    {
+      "turn_detection": 0.0,
+      "llm_and_tts": 0.8,
+      "total": 0.8
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.32,
+      "total": 0.92
+    },
+    {
+      "turn_detection": 0.59,
+      "llm_and_tts": 0.79,
+      "total": 1.39
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.33,
+      "total": 0.93
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.87,
+      "total": 1.47
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.61,
+      "total": 1.2
+    },
+    {
+      "turn_detection": 0.0,
+      "llm_and_tts": 0.76,
+      "total": 0.76
+    },
+    {
+      "turn_detection": 0.62,
+      "llm_and_tts": 1.74,
+      "total": 2.36
+    },
+    {
+      "turn_detection": 0.62,
+      "llm_and_tts": 0.87,
+      "total": 1.48
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.56,
+      "total": 1.16
+    },
+    {
+      "turn_detection": 0.0,
+      "llm_and_tts": 1.38,
+      "total": 1.38
+    }
+  ]
+}

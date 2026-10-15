@@ -1,0 +1,144 @@
+{
+  "scenario": "cancel_with_fee",
+  "title": "Canceling an appointment and asking about a fee",
+  "persona": {
+    "name": "Tom Becker",
+    "dob": "February 14, 1968",
+    "phone": "805-555-0131",
+    "voice": "8c254787-4eb4-4577-bd3d-fb3c273baea2",
+    "insurance": "UnitedHealthcare Choice Plus",
+    "style": "matter-of-fact, slightly worried about being charged"
+  },
+  "goals": [
+    {
+      "goal": "Cancel your appointment later this week; something came up at work.",
+      "reached": false
+    },
+    {
+      "goal": "Ask whether there's a cancellation fee or a notice policy.",
+      "reached": false
+    },
+    {
+      "goal": "Get a clear confirmation that the appointment is cancelled.",
+      "reached": false
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.4,
+      "end": 12.9,
+      "speaker": "AGENT",
+      "text": "For calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 13.2,
+      "end": 18.2,
+      "speaker": "PATIENT",
+      "text": "Hi, I'm calling to cancel my appointment later this week. Something came up at work.",
+      "interrupted": false
+    },
+    {
+      "t": 20.5,
+      "end": 23.4,
+      "speaker": "AGENT",
+      "text": "Can you please provide your full name and date of birth?",
+      "interrupted": false
+    },
+    {
+      "t": 23.7,
+      "end": 31.9,
+      "speaker": "PATIENT",
+      "text": "Sure, it's Tom Becker, and my date of birth is February 14, 1968. Please go ahead and cancel that appointment for me.",
+      "interrupted": false
+    },
+    {
+      "t": 34.4,
+      "end": 39.1,
+      "speaker": "AGENT",
+      "text": "Before I can help with your request, can you please spell your first and last name for me?",
+      "interrupted": false
+    },
+    {
+      "t": 39.3,
+      "end": 47.3,
+      "speaker": "PATIENT",
+      "text": "Yeah, sure. That's T-O-M B-E-C-K-E-R. Now, can you please confirm the cancellation of my appointment?",
+      "interrupted": false
+    },
+    {
+      "t": 51.2,
+      "end": 63.1,
+      "speaker": "AGENT",
+      "text": "Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us If you are not sure, I can confirm your name and date of birth again. Which would you prefer?",
+      "interrupted": false
+    },
+    {
+      "t": 63.8,
+      "end": 79.3,
+      "speaker": "PATIENT",
+      "text": "I'd like to use my phone number, please. It's 805-555-0131. Can you please find my appointment and confirm the cancellation?\nAlso, can you tell me if there's any cancellation fee or notice policy I should be aware of?",
+      "interrupted": false
+    },
+    {
+      "t": 81.8,
+      "end": 92.2,
+      "speaker": "AGENT",
+      "text": "I have your phone number as eight zero five five five five zero one three one. And your date of birth as February fourteenth nineteen sixty eight. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 92.9,
+      "end": 102.2,
+      "speaker": "PATIENT",
+      "text": "Yeah, that's right. So, can you please cancel my appointment and confirm that it's done? Also, let me know if there's any cancellation fee or notice policy.",
+      "interrupted": false
+    },
+    {
+      "t": 105.2,
+      "end": 113.6,
+      "speaker": "AGENT",
+      "text": "I can't proceed further right now. But I can make sure our clinic support team follows up with you. Would you like me to connect you to our patient support team?",
+      "interrupted": false
+    },
+    {
+      "t": 113.9,
+      "end": 123.5,
+      "speaker": "PATIENT",
+      "text": "No, that's okay. I just want to make sure my appointment is cancelled now and hear about any fees. If you can't do that, I'll have to call back later. Thanks. Goodbye.",
+      "interrupted": false
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_detection": 0.59,
+      "llm_and_tts": 0.27,
+      "total": 0.86
+    },
+    {
+      "turn_detection": 0.62,
+      "llm_and_tts": 0.26,
+      "total": 0.88
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.16,
+      "total": 0.77
+    },
+    {
+      "turn_detection": 0.62,
+      "llm_and_tts": 0.64,
+      "total": 1.26
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.68,
+      "total": 1.28
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.21,
+      "total": 0.82
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "room": "call-20261014-193139-refill_named_med",
+  "scenario": "refill_named_med",
+  "started_at": "2026-10-15T02:31:46+00:00",
+  "duration_s": 154.2,
+  "ended_by": "patient",
+  "caller_number": "+13144642661",
+  "dialed": "+18054398008",
+  "recording": "recording.ogg",
+  "providers": {
+    "stt": "deepgram nova-3",
+    "llm": "openai gpt-4.1-mini",
+    "tts": "cartesia sonic-3",
+    "vad": "silero",
+    "turn_detection": "livekit turn-detector (english)"
+  },
+  "saved_at": "2026-10-15T02:34:20+00:00"
+}

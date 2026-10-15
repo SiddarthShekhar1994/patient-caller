@@ -1,0 +1,6 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopedics. Part of [company]. How may I help you today?
+[00:13] PATIENT: Hey! I was wondering if you could tell me what your office hours are, and if you're open on Saturdays?
+[00:22] AGENT: Pivot Point Orthopedics is open Monday through Friday. We are not open on Saturdays. Our hours are nine AM to four PM on Monday, Tuesday, and Thursday. Twelve PM to seven PM on Wednesday, and nine AM to twelve PM on Friday. Me know if you need anything else.
+[00:39] PATIENT: Awesome, thanks for that! Could you also tell me the clinic's address?
+[00:46] AGENT: The clinic address is one two three four Recovery Way, suite two hundred, Austin. If you need directions or anything else, just let me know.
+[00:55] PATIENT: Cool, cool. And where's the best place to park? Is there a cost for parking or anything?

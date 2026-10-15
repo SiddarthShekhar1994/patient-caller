@@ -1,0 +1,13 @@
+[00:00] AGENT: For calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?
+[00:13] PATIENT: Hi, I'm calling to cancel my appointment later this week. Something came up at work.
+[00:20] AGENT: Can you please provide your full name and date of birth?
+[00:23] PATIENT: Sure, it's Tom Becker, and my date of birth is February 14, 1968. Please go ahead and cancel that appointment for me.
+[00:34] AGENT: Before I can help with your request, can you please spell your first and last name for me?
+[00:39] PATIENT: Yeah, sure. That's T-O-M B-E-C-K-E-R. Now, can you please confirm the cancellation of my appointment?
+[00:51] AGENT: Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us If you are not sure, I can confirm your name and date of birth again. Which would you prefer?
+[01:03] PATIENT: I'd like to use my phone number, please. It's 805-555-0131. Can you please find my appointment and confirm the cancellation?
+Also, can you tell me if there's any cancellation fee or notice policy I should be aware of?
+[01:21] AGENT: I have your phone number as eight zero five five five five zero one three one. And your date of birth as February fourteenth nineteen sixty eight. Is that correct?
+[01:32] PATIENT: Yeah, that's right. So, can you please cancel my appointment and confirm that it's done? Also, let me know if there's any cancellation fee or notice policy.
+[01:45] AGENT: I can't proceed further right now. But I can make sure our clinic support team follows up with you. Would you like me to connect you to our patient support team?
+[01:53] PATIENT: No, that's okay. I just want to make sure my appointment is cancelled now and hear about any fees. If you can't do that, I'll have to call back later. Thanks. Goodbye.

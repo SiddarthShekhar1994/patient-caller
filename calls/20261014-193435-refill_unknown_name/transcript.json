@@ -1,0 +1,273 @@
+{
+  "scenario": "refill_unknown_name",
+  "title": "Refill when the patient can't remember the drug name",
+  "persona": {
+    "name": "Harold Jenkins",
+    "dob": "December 3, 1949",
+    "phone": "805-555-0156",
+    "voice": "7d444628-dd13-442b-b687-71a6baf0c07e",
+    "insurance": "Medicare",
+    "style": "older, friendly, a bit forgetful, says \"now let me think\" now and then",
+    "extra": "You can't remember the name of your medicine. It's a small white pill for muscle spasms in your lower back, and you think the name starts with a C. You don't have the bottle in front of you."
+  },
+  "goals": [
+    {
+      "goal": "Ask for a refill of your back spasm pill without knowing its name.",
+      "reached": true
+    },
+    {
+      "goal": "If they need the name, say you can't recall it and ask what they suggest.",
+      "reached": true
+    },
+    {
+      "goal": "Find out what the next step is.",
+      "reached": true
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.5,
+      "end": 12.9,
+      "speaker": "AGENT",
+      "text": "Thanks for calling Pivot Point Orthopaedics. Part of [company], How may I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 13.4,
+      "end": 18.4,
+      "speaker": "PATIENT",
+      "text": "Hi there, I'm calling to ask about getting a refill on a pill I take for back spasms.",
+      "interrupted": false
+    },
+    {
+      "t": 22.3,
+      "end": 26.8,
+      "speaker": "AGENT",
+      "text": "I see you're calling from the number we have on file. Am I speaking with Maria?",
+      "interrupted": false
+    },
+    {
+      "t": 27.1,
+      "end": 33.9,
+      "speaker": "PATIENT",
+      "text": "No, this is Harold Jenkins. Sorry if that was unclear. Could you check if you have me in your system?",
+      "interrupted": false
+    },
+    {
+      "t": 35.9,
+      "end": 39.9,
+      "speaker": "AGENT",
+      "text": "I can check for you. Please provide your full name and date of birth.",
+      "interrupted": false
+    },
+    {
+      "t": 40.8,
+      "end": 44.2,
+      "speaker": "PATIENT",
+      "text": "Sure, it's Harold Jenkins, December third, nineteen forty-nine.",
+      "interrupted": false
+    },
+    {
+      "t": 48.4,
+      "end": 55.8,
+      "speaker": "AGENT",
+      "text": "Just to confirm, I have your name as Harold Jenkins and your date of birth as December third nineteen forty nine. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 56.7,
+      "end": 66.0,
+      "speaker": "PATIENT",
+      "text": "Yeah, that's right. Now, about that pill refill for my back spasms. I don't recall the name exactly, but I think it's a small white pill starting with a C. Could you help me with that?",
+      "interrupted": false
+    },
+    {
+      "t": 68.3,
+      "end": 73.2,
+      "speaker": "AGENT",
+      "text": "Let me check your chart for your current medications and refill options. One moment.",
+      "interrupted": false
+    },
+    {
+      "t": 73.7,
+      "end": 76.6,
+      "speaker": "PATIENT",
+      "text": "Alright, take your time. Let me know what you find.",
+      "interrupted": false
+    },
+    {
+      "t": 79.5,
+      "end": 83.9,
+      "speaker": "AGENT",
+      "text": "Thanks for confirming your information. One moment while I look up your chart.",
+      "interrupted": false
+    },
+    {
+      "t": 84.7,
+      "end": 86.3,
+      "speaker": "PATIENT",
+      "text": "Okay, thank you.",
+      "interrupted": true
+    },
+    {
+      "t": 84.9,
+      "end": 86.6,
+      "speaker": "AGENT",
+      "text": "Would you like me to look up",
+      "interrupted": false
+    },
+    {
+      "t": 87.7,
+      "end": 89.2,
+      "speaker": "PATIENT",
+      "text": "Sorry, I was",
+      "interrupted": true
+    },
+    {
+      "t": 88.2,
+      "end": 89.6,
+      "speaker": "AGENT",
+      "text": "would you like me to look",
+      "interrupted": false
+    },
+    {
+      "t": 92.8,
+      "end": 94.5,
+      "speaker": "PATIENT",
+      "text": "I was just about to",
+      "interrupted": true
+    },
+    {
+      "t": 93.7,
+      "end": 94.8,
+      "speaker": "AGENT",
+      "text": "No problem.",
+      "interrupted": false
+    },
+    {
+      "t": 95.6,
+      "end": 101.5,
+      "speaker": "PATIENT",
+      "text": "Thanks for your patience. Could you tell me if you found the medicine name or if you need me to try something else?",
+      "interrupted": false
+    },
+    {
+      "t": 103.7,
+      "end": 110.6,
+      "speaker": "AGENT",
+      "text": "To help find your record, could you please provide the phone number you have on file with us? If you're not sure, just let me know",
+      "interrupted": false
+    },
+    {
+      "t": 113.1,
+      "end": 117.3,
+      "speaker": "PATIENT",
+      "text": "Yeah, the phone number is eight-oh-five, five-five-five, oh-one-five-six.",
+      "interrupted": false
+    },
+    {
+      "t": 120.9,
+      "end": 131.9,
+      "speaker": "AGENT",
+      "text": "I'd have your phone number as eight zero five five five five zero one five six and your date of birth as December third nineteen forty nine. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 132.8,
+      "end": 141.0,
+      "speaker": "PATIENT",
+      "text": "Yes, that's right. Now, about the pill refill\u2014I can't quite recall the name of the medicine. What do you suggest I do next to get it refilled?",
+      "interrupted": false
+    },
+    {
+      "t": 143.7,
+      "end": 154.1,
+      "speaker": "AGENT",
+      "text": "I wasn't able to find your record in our system. So I can't process the refill right now. I can connect you to our patient support team for more help. Would you like me to transfer you?",
+      "interrupted": false
+    },
+    {
+      "t": 155.0,
+      "end": 159.9,
+      "speaker": "PATIENT",
+      "text": "Yes, that works. Please connect me to the patient support team. Thanks.",
+      "interrupted": false
+    },
+    {
+      "t": 159.2,
+      "end": 161.0,
+      "speaker": "AGENT",
+      "text": "Transferring you now. Thank you.",
+      "interrupted": false
+    },
+    {
+      "t": 162.9,
+      "end": 163.3,
+      "speaker": "AGENT",
+      "text": "Hello.",
+      "interrupted": false
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_detection": 0.59,
+      "llm_and_tts": 0.52,
+      "total": 1.1
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.25,
+      "total": 0.86
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.84,
+      "total": 1.45
+    },
+    {
+      "turn_detection": 0.65,
+      "llm_and_tts": 0.83,
+      "total": 1.47
+    },
+    {
+      "turn_detection": 0.67,
+      "llm_and_tts": 0.35,
+      "total": 1.02
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.75,
+      "total": 1.36
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 1.07,
+      "total": 1.68
+    },
+    {
+      "turn_detection": 3.0,
+      "llm_and_tts": 0.8,
+      "total": 3.81
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.73,
+      "total": 1.33
+    },
+    {
+      "turn_detection": 3.01,
+      "llm_and_tts": 0.12,
+      "total": 3.13
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.84,
+      "total": 1.45
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.81,
+      "total": 1.42
+    }
+  ]
+}

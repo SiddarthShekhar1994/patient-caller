@@ -1,0 +1,21 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?
+[00:13] PATIENT: Hi, I'm calling to see if I can get an appointment for wrist pain.
+[00:19] AGENT: I see you're calling from the number we have on file. Am I speaking with Maria?
+[00:24] PATIENT: No, this is Emily Chen. Could I please check if you have me under my full name?
+[00:32] AGENT: Sure. Could you provide your full name and date of birth?
+[00:35] AGENT: I'll check for you.
+[00:37] PATIENT: My full name is Emily Chen, and my date of birth is January 27, 1990. Could you please see if you have any appointments available this Sunday morning? That's the only time I'm free.
+[00:51] AGENT: I'll check the schedule for you. But first, can you please spell your first and last name to make sure I have it correct?
+[00:58] PATIENT: Sure, it's E-M-I-L-Y C-H-E-N. Could you please see if you have any appointments this Sunday morning?
+[01:09] AGENT: Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us. If you're not sure, I can confirm your name and date of birth again. Which would you prefer?
+[01:20] PATIENT: Let's stick with my name and date of birth for now. I just want to know if there's an appointment this Sunday morning for my wrist pain.
+[01:29] AGENT: No problem.
+[01:30] AGENT: To make sure I have your details right, could you please spell your first and last name one more time? And confirm your date of birth?
+[01:35] AGENT: Then I'll check Sunday morning appointments for you.
+[01:38] PATIENT: It's Emily Chen, E-M-I-L-Y C-H-E-N, and my date of birth is January 27, 1990. Do you have anything Sunday morning?
+[01:51] AGENT: I have your phone number as three one four four six four two six six one and your date of birth is January twenty seventh nineteen ninety. Is that correct?
+[02:02] PATIENT: That's not my phone number. The correct number is 805-555-0189. But yes, the date of birth is correct. Can you please check for Sunday morning now?
+[02:14] AGENT: I can't find a matching record for you in our system. I'll connect you to our patient support team so they could help you schedule your appointment.
+[02:21] AGENT: Please stay on the line.
+[02:23] AGENT: Transferring you now. Thank you.
+[02:26] PATIENT: Okay, thanks for trying. [cut off]

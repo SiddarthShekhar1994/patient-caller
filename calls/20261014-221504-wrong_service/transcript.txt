@@ -1,0 +1,19 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?
+[00:13] PATIENT: Hi, I'm calling to see if I can book a skin check for a mole on my back that's changed shape.
+[00:21] AGENT: I see you're calling from a number we have on file. Am I speaking with Maria?
+[00:26] PATIENT: Oh, no, I'm Kevin O'Brien. Sorry, I think this is the right number though. Can I still book that skin check?
+[00:35] AGENT: No problem. Kevin, please provide your full date of birth.
+[00:39] PATIENT: Sure, it's October 2, 1987. So, do you do skin checks for moles here?
+[00:49] AGENT: Thanks, Kevin.
+[00:50] AGENT: Could you please spell your last name for me just to make sure I have it right?
+[00:54] AGENT: And can you confirm your date of birth as October second nineteen eighty seven?
+[00:59] PATIENT: Yeah, that's right. And my last name is O'Brien, O-apostrophe-B-R-I-E-N. So, do you offer skin checks here or should I go somewhere else?
+[01:15] AGENT: We can help with that, but I need to confirm your details first. Could you tell me the phone number you have on file with us? If you're not sure, just let me know, and I'll confirm your name and date of birth again.
+[01:25] PATIENT: My phone number is 805-555-0128. So, can I book the skin check now?
+[01:37] AGENT: I have your phone number as eight zero five five five five zero one two eight
+[01:42] AGENT: and your date of birth
+[01:44] AGENT: as October second nineteen eighty seven. Is that correct?
+[01:48] PATIENT: Yeah, that's correct. So, can we set up the appointment for the skin check?
+[01:56] AGENT: I can't find a matching record for you in our system. I'll connect you to our patient support team so they can help you with booking your appointment. Please stay on the line.
+[02:06] AGENT: Transferring you now. Thank you.
+[02:09] PATIENT: Thanks for your help. I'll wait for the patient support [cut off]

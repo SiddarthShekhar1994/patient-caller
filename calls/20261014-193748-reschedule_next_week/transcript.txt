@@ -1,0 +1,17 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?
+[00:12] PATIENT: Hi, I've got an appointment this Thursday morning, but I need to move it to an afternoon next week if possible.
+[00:23] AGENT: I see you're calling from the number we have on file. Am I speaking with Maria?
+[00:27] PATIENT: Actually, it's Priya Raman calling. Could you check my appointment [cut off]
+[00:35] AGENT: Please provide I'll need your full name and date of birth to look up your appointment. Could you share those details?
+[00:41] PATIENT: Sure, it's Priya Raman, and my date of birth is November 9, 1992. Thanks!
+[00:50] AGENT: One moment while I look up your information. Just to confirm, I have your name as Priya Raman. And your date of birth as November ninth nineteen ninety two. Is that correct?
+[01:03] PATIENT: Yes, that's right. So, about my appointment this Thursday morning—I need to move it to any afternoon next week. Could you help with that?
+[01:15] AGENT: Would you like me to look up your record using the phone number you have on file with us? If so, please tell me the number you use with our office. If you're not sure I can confirm your name and date of birth again, just let me know.
+[01:28] PATIENT: Yes, please use the number on file. It's 805-555-0123. Thanks! Now, can we check what afternoons are available next week to move my appointment?
+[01:45] AGENT: I have your phone number as eight zero five five five five zero one two three and your date of birth is November ninth nineteen ninety two. Is that correct?
+[01:55] PATIENT: Yes, that's correct. So, could you please tell me what afternoons next week you have open for my appointment?
+[02:05] AGENT: I'm unable to find your record in our system. I can connect you to our patient support team or if you'd like, I can document your request for follow-up.
+[02:14] AGENT: Would you like to speak with someone from our support team now?
+[02:21] PATIENT: Yes, that would be great, thank you. I'd like to get this sorted as soon as possible.
+[02:30] AGENT: Transferring you now. Thank you.
+[02:34] AGENT: Hello. You've reached the [company] test line. Goodbye.

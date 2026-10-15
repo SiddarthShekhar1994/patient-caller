@@ -1,0 +1,86 @@
+{
+  "scenario": "hours_address_parking",
+  "title": "Office hours, address and parking",
+  "persona": {
+    "name": "Sofia Russo",
+    "dob": "April 18, 1995",
+    "phone": "805-555-0162",
+    "voice": "2a12b36c-7f9b-4c3a-9f7a-72731b15323a",
+    "style": "upbeat and casual, says \"awesome\" a lot"
+  },
+  "goals": [
+    {
+      "goal": "Ask what their office hours are, including whether they're open Saturdays.",
+      "reached": true
+    },
+    {
+      "goal": "Ask for the clinic's address.",
+      "reached": true
+    },
+    {
+      "goal": "Ask where to park and whether parking costs anything.",
+      "reached": false
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.5,
+      "end": 13.0,
+      "speaker": "AGENT",
+      "text": "Thanks for calling Pivot Point Orthopedics. Part of [company]. How may I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 13.8,
+      "end": 18.9,
+      "speaker": "PATIENT",
+      "text": "Hey! I was wondering if you could tell me what your office hours are, and if you're open on Saturdays?",
+      "interrupted": false
+    },
+    {
+      "t": 22.1,
+      "end": 39.2,
+      "speaker": "AGENT",
+      "text": "Pivot Point Orthopedics is open Monday through Friday. We are not open on Saturdays. Our hours are nine AM to four PM on Monday, Tuesday, and Thursday. Twelve PM to seven PM on Wednesday, and nine AM to twelve PM on Friday. Me know if you need anything else.",
+      "interrupted": false
+    },
+    {
+      "t": 39.8,
+      "end": 43.3,
+      "speaker": "PATIENT",
+      "text": "Awesome, thanks for that! Could you also tell me the clinic's address?",
+      "interrupted": false
+    },
+    {
+      "t": 46.3,
+      "end": 54.5,
+      "speaker": "AGENT",
+      "text": "The clinic address is one two three four Recovery Way, suite two hundred, Austin. If you need directions or anything else, just let me know.",
+      "interrupted": false
+    },
+    {
+      "t": 55.3,
+      "end": 59.6,
+      "speaker": "PATIENT",
+      "text": "Cool, cool. And where's the best place to park? Is there a cost for parking or anything?",
+      "interrupted": false
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_detection": 0.59,
+      "llm_and_tts": 0.8,
+      "total": 1.38
+    },
+    {
+      "turn_detection": 0.63,
+      "llm_and_tts": 0.54,
+      "total": 1.17
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.77,
+      "total": 1.37
+    }
+  ]
+}

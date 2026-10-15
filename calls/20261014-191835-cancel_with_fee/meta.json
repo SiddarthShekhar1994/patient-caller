@@ -1,0 +1,18 @@
+{
+  "room": "call-20261014-191835-cancel_with_fee",
+  "scenario": "cancel_with_fee",
+  "started_at": "2026-10-15T02:18:41+00:00",
+  "duration_s": 132.0,
+  "ended_by": "patient",
+  "caller_number": "+13144642661",
+  "dialed": "+18054398008",
+  "recording": "recording.ogg",
+  "providers": {
+    "stt": "deepgram nova-3",
+    "llm": "openai gpt-4.1-mini",
+    "tts": "cartesia sonic-3",
+    "vad": "silero",
+    "turn_detection": "livekit turn-detector (english)"
+  },
+  "saved_at": "2026-10-15T02:20:53+00:00"
+}

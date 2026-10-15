@@ -1,0 +1,23 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good How may I help you today?
+[00:13] PATIENT: Hi, I'm calling to check if you accept Aetna Choice POS Two insurance.
+[00:20] AGENT: You're calling from the number we have on file. Am I speaking with Maria?
+[00:24] PATIENT: No, this is Marcus Johnson. Could you tell me if you accept Aetna Choice POS Two insurance?
+[00:32] AGENT: I'll need your full name and date of birth before I can check insurance details.
+[00:36] AGENT: Could you please provide your date of birth?
+[00:39] PATIENT: Sure, my date of birth is September 5, 1984. Do you accept Aetna Choice POS Two?
+[00:48] AGENT: Just to confirm, I have your name as Marcus Johnson, and your date of birth is September fifth nineteen eighty four. Is that correct?
+[00:56] PATIENT: Yes, that's correct. Can you tell me if you accept [cut off]
+[01:00] AGENT: Thank you.
+[01:02] PATIENT: Thanks. Could you please tell me what the copay would roughly be for a new patient visit with that insurance?
+[01:09] AGENT: Look up your insurance details, I need to confirm your record. Could you please spell your first and last name? And confirm your date of birth?
+[01:18] AGENT: Or if you prefer, you can provide the phone number you have on file with us.
+[01:22] PATIENT: Okay, my phone number is 805-555-0175. Could you tell me what the copay would be for a new patient visit with my insurance?
+[01:34] AGENT: I have your phone number as eight zero five five five five.
+[01:37] AGENT: Zero one seven five.
+[01:39] AGENT: And your date of birth is September fifth nineteen eighty four. Is that correct?
+[01:44] PATIENT: Yes, that's correct. Can you tell me now what the copay would be roughly for a new patient visit with my insurance?
+[01:54] AGENT: I can't access your insurance details without a matching patient record in our system. Connect you to our patient support team so they can help you with your insurance and co pay questions. Please stay on the line.
+[02:05] AGENT: Try to ring you now. Thank you.
+[02:07] PATIENT: Okay, thank you for trying. [cut off]
+[02:09] AGENT: Hello. You've reached the [company] test line. Goodbye.
+[02:13] PATIENT: Thanks for your help. Goodbye.

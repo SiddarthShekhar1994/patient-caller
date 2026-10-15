@@ -1,0 +1,236 @@
+{
+  "scenario": "insurance_copay",
+  "title": "Is a named insurance plan accepted, and what's the copay",
+  "persona": {
+    "name": "Marcus Johnson",
+    "dob": "September 5, 1984",
+    "phone": "805-555-0175",
+    "voice": "aa2cafe9-97ba-4052-ac3c-875000f95212",
+    "insurance": "Aetna Choice POS II",
+    "style": "calm, careful, asks follow-up questions"
+  },
+  "goals": [
+    {
+      "goal": "Ask whether they accept Aetna Choice POS Two.",
+      "reached": true
+    },
+    {
+      "goal": "Ask what your copay would roughly be for a new patient visit.",
+      "reached": false
+    },
+    {
+      "goal": "If they can't say, ask how you could find out.",
+      "reached": true
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.5,
+      "end": 12.5,
+      "speaker": "AGENT",
+      "text": "Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good How may I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 13.0,
+      "end": 16.5,
+      "speaker": "PATIENT",
+      "text": "Hi, I'm calling to check if you accept Aetna Choice POS Two insurance.",
+      "interrupted": false
+    },
+    {
+      "t": 20.2,
+      "end": 24.5,
+      "speaker": "AGENT",
+      "text": "You're calling from the number we have on file. Am I speaking with Maria?",
+      "interrupted": false
+    },
+    {
+      "t": 24.8,
+      "end": 29.9,
+      "speaker": "PATIENT",
+      "text": "No, this is Marcus Johnson. Could you tell me if you accept Aetna Choice POS Two insurance?",
+      "interrupted": false
+    },
+    {
+      "t": 32.3,
+      "end": 36.1,
+      "speaker": "AGENT",
+      "text": "I'll need your full name and date of birth before I can check insurance details.",
+      "interrupted": false
+    },
+    {
+      "t": 36.2,
+      "end": 38.5,
+      "speaker": "AGENT",
+      "text": "Could you please provide your date of birth?",
+      "interrupted": false
+    },
+    {
+      "t": 39.4,
+      "end": 46.4,
+      "speaker": "PATIENT",
+      "text": "Sure, my date of birth is September 5, 1984. Do you accept Aetna Choice POS Two?",
+      "interrupted": false
+    },
+    {
+      "t": 48.9,
+      "end": 56.3,
+      "speaker": "AGENT",
+      "text": "Just to confirm, I have your name as Marcus Johnson, and your date of birth is September fifth nineteen eighty four. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 56.9,
+      "end": 60.8,
+      "speaker": "PATIENT",
+      "text": "Yes, that's correct. Can you tell me if you accept",
+      "interrupted": true
+    },
+    {
+      "t": 60.4,
+      "end": 61.2,
+      "speaker": "AGENT",
+      "text": "Thank you.",
+      "interrupted": false
+    },
+    {
+      "t": 62.1,
+      "end": 66.7,
+      "speaker": "PATIENT",
+      "text": "Thanks. Could you please tell me what the copay would roughly be for a new patient visit with that insurance?",
+      "interrupted": false
+    },
+    {
+      "t": 69.4,
+      "end": 78.1,
+      "speaker": "AGENT",
+      "text": "Look up your insurance details, I need to confirm your record. Could you please spell your first and last name? And confirm your date of birth?",
+      "interrupted": false
+    },
+    {
+      "t": 78.2,
+      "end": 81.7,
+      "speaker": "AGENT",
+      "text": "Or if you prefer, you can provide the phone number you have on file with us.",
+      "interrupted": false
+    },
+    {
+      "t": 82.6,
+      "end": 91.2,
+      "speaker": "PATIENT",
+      "text": "Okay, my phone number is 805-555-0175. Could you tell me what the copay would be for a new patient visit with my insurance?",
+      "interrupted": false
+    },
+    {
+      "t": 94.0,
+      "end": 97.3,
+      "speaker": "AGENT",
+      "text": "I have your phone number as eight zero five five five five.",
+      "interrupted": false
+    },
+    {
+      "t": 97.6,
+      "end": 99.3,
+      "speaker": "AGENT",
+      "text": "Zero one seven five.",
+      "interrupted": false
+    },
+    {
+      "t": 99.4,
+      "end": 104.1,
+      "speaker": "AGENT",
+      "text": "And your date of birth is September fifth nineteen eighty four. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 104.4,
+      "end": 110.9,
+      "speaker": "PATIENT",
+      "text": "Yes, that's correct. Can you tell me now what the copay would be roughly for a new patient visit with my insurance?",
+      "interrupted": false
+    },
+    {
+      "t": 114.5,
+      "end": 124.9,
+      "speaker": "AGENT",
+      "text": "I can't access your insurance details without a matching patient record in our system. Connect you to our patient support team so they can help you with your insurance and co pay questions. Please stay on the line.",
+      "interrupted": false
+    },
+    {
+      "t": 125.3,
+      "end": 127.0,
+      "speaker": "AGENT",
+      "text": "Try to ring you now. Thank you.",
+      "interrupted": false
+    },
+    {
+      "t": 127.7,
+      "end": 129.6,
+      "speaker": "PATIENT",
+      "text": "Okay, thank you for trying.",
+      "interrupted": true
+    },
+    {
+      "t": 129.0,
+      "end": 133.0,
+      "speaker": "AGENT",
+      "text": "Hello. You've reached the [company] test line. Goodbye.",
+      "interrupted": false
+    },
+    {
+      "t": 133.7,
+      "end": 136.1,
+      "speaker": "PATIENT",
+      "text": "Thanks for your help. Goodbye.",
+      "interrupted": false
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_detection": 0.59,
+      "llm_and_tts": 0.55,
+      "total": 1.14
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.33,
+      "total": 0.92
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.97,
+      "total": 1.56
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.62,
+      "total": 1.22
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.86,
+      "total": 1.46
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.88,
+      "total": 1.48
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.23,
+      "total": 0.83
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.68,
+      "total": 1.28
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.7,
+      "total": 1.3
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "scenario": "refill_named_med",
+  "title": "Refill for a named maintenance medication",
+  "persona": {
+    "name": "Linda Morales",
+    "dob": "July 30, 1961",
+    "phone": "805-555-0144",
+    "voice": "d7bf7d75-64b7-4c1e-86c0-79d647366587",
+    "insurance": "Humana Medicare Advantage",
+    "style": "warm and organized, reads things off a list",
+    "extra": "You take meloxicam, fifteen milligrams, once a day for arthritis in your knees. Your pharmacy is the CVS on Main Street."
+  },
+  "goals": [
+    {
+      "goal": "Ask for a refill of your meloxicam, fifteen milligrams.",
+      "reached": true
+    },
+    {
+      "goal": "Ask how long refills usually take to reach the pharmacy.",
+      "reached": true
+    },
+    {
+      "goal": "Confirm which pharmacy it's going to.",
+      "reached": true
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.5,
+      "end": 13.3,
+      "speaker": "AGENT",
+      "text": "Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 13.6,
+      "end": 17.7,
+      "speaker": "PATIENT",
+      "text": "Hi, I'm calling to request a refill for my meloxicam prescription.",
+      "interrupted": false
+    },
+    {
+      "t": 21.9,
+      "end": 25.9,
+      "speaker": "AGENT",
+      "text": "I see you're calling from the number we have on file. Am I speaking with Maria?",
+      "interrupted": false
+    },
+    {
+      "t": 26.1,
+      "end": 32.0,
+      "speaker": "PATIENT",
+      "text": "Actually, this is Linda Morales. Could you please check my records with that name?",
+      "interrupted": false
+    },
+    {
+      "t": 34.4,
+      "end": 37.1,
+      "speaker": "AGENT",
+      "text": "Please provide your date of birth as well.",
+      "interrupted": false
+    },
+    {
+      "t": 37.5,
+      "end": 48.3,
+      "speaker": "PATIENT",
+      "text": "Sure, my date of birth is July 30, 1961. Now, about that meloxicam refill\u2014it's the fifteen milligrams strength. Could you please help with that?",
+      "interrupted": false
+    },
+    {
+      "t": 50.7,
+      "end": 59.5,
+      "speaker": "AGENT",
+      "text": "Just to confirm, I have your name as Linda Morales and your date of birth as July thirtieth nineteen sixty one. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 60.1,
+      "end": 66.1,
+      "speaker": "PATIENT",
+      "text": "Yes, that's correct. Could you tell me how long it usually takes for refills to reach the pharmacy?",
+      "interrupted": false
+    },
+    {
+      "t": 69.3,
+      "end": 86.3,
+      "speaker": "AGENT",
+      "text": "Refills are usually processed within one to two business days, The pharmacy may take a bit longer to fill it after that. Would you like to use your phone number to help look up your record? If so, please tell me the number you have on file with us. If you're not sure, I can confirm your name and date of birth again instead.",
+      "interrupted": false
+    },
+    {
+      "t": 86.9,
+      "end": 101.4,
+      "speaker": "PATIENT",
+      "text": "You can use the phone number I called from, that's 805-555-0144. Also, can you confirm which pharmacy the refill will be sent to? My usual pharmacy is the CVS on Main Street.",
+      "interrupted": false
+    },
+    {
+      "t": 104.2,
+      "end": 114.1,
+      "speaker": "AGENT",
+      "text": "Have your phone number as eight zero five five five zero one four four and your date of birth as July thirtieth nineteen sixty one. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 114.7,
+      "end": 130.8,
+      "speaker": "PATIENT",
+      "text": "Yes, that's all correct. Please also confirm that the refill will be sent to the CVS on Main Street.\nThank you very much. I appreciate your help with the refill and the information about how long it takes. Have",
+      "interrupted": true
+    },
+    {
+      "t": 128.7,
+      "end": 139.9,
+      "speaker": "AGENT",
+      "text": "I can't proceed further right now, but I'll make sure our clinic support team follows up with you. Please stay on the line while I connect you to our patient support team. Transferring you now. Thank you.",
+      "interrupted": false
+    },
+    {
+      "t": 140.7,
+      "end": 145.2,
+      "speaker": "PATIENT",
+      "text": "Thanks for letting me know. I'll wait for",
+      "interrupted": true
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_detection": 0.59,
+      "llm_and_tts": 0.33,
+      "total": 0.92
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.19,
+      "total": 0.8
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.34,
+      "total": 0.95
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.52,
+      "total": 1.13
+    },
+    {
+      "turn_detection": 0.63,
+      "llm_and_tts": 0.61,
+      "total": 1.24
+    },
+    {
+      "turn_detection": 0.63,
+      "llm_and_tts": 0.64,
+      "total": 1.26
+    },
+    {
+      "turn_detection": 0.62,
+      "llm_and_tts": 0.67,
+      "total": 1.29
+    }
+  ]
+}

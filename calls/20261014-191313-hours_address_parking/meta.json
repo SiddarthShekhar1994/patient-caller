@@ -1,0 +1,18 @@
+{
+  "room": "call-20261014-191313-hours_address_parking",
+  "scenario": "hours_address_parking",
+  "started_at": "2026-10-15T02:13:20+00:00",
+  "duration_s": 179.8,
+  "ended_by": "patient",
+  "caller_number": "+13144642661",
+  "dialed": "+18054398008",
+  "recording": "recording.ogg",
+  "providers": {
+    "stt": "deepgram nova-3",
+    "llm": "openai gpt-4.1-mini",
+    "tts": "cartesia sonic-3",
+    "vad": "silero",
+    "turn_detection": "livekit turn-detector (english)"
+  },
+  "saved_at": "2026-10-15T02:16:20+00:00"
+}

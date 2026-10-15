@@ -1,0 +1,194 @@
+{
+  "scenario": "wrong_service",
+  "title": "Asking for a service the clinic probably doesn't offer",
+  "persona": {
+    "name": "Kevin O'Brien",
+    "dob": "October 2, 1987",
+    "phone": "805-555-0128",
+    "voice": "86e30c1d-714b-4074-a1f2-1cb6b552fb49",
+    "insurance": "Anthem Blue Cross PPO",
+    "style": "friendly and a bit unsure, assumes all clinics do the same things"
+  },
+  "goals": [
+    {
+      "goal": "Ask to book a skin check for a mole on your back that's changed shape.",
+      "reached": true
+    },
+    {
+      "goal": "If they don't do that, ask where you should go instead.",
+      "reached": false
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.5,
+      "end": 12.7,
+      "speaker": "AGENT",
+      "text": "Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 13.6,
+      "end": 18.1,
+      "speaker": "PATIENT",
+      "text": "Hi, I'm calling to see if I can book a skin check for a mole on my back that's changed shape.",
+      "interrupted": false
+    },
+    {
+      "t": 21.4,
+      "end": 26.2,
+      "speaker": "AGENT",
+      "text": "I see you're calling from a number we have on file. Am I speaking with Maria?",
+      "interrupted": false
+    },
+    {
+      "t": 26.4,
+      "end": 32.8,
+      "speaker": "PATIENT",
+      "text": "Oh, no, I'm Kevin O'Brien. Sorry, I think this is the right number though. Can I still book that skin check?",
+      "interrupted": false
+    },
+    {
+      "t": 35.1,
+      "end": 38.8,
+      "speaker": "AGENT",
+      "text": "No problem. Kevin, please provide your full date of birth.",
+      "interrupted": false
+    },
+    {
+      "t": 39.2,
+      "end": 45.2,
+      "speaker": "PATIENT",
+      "text": "Sure, it's October 2, 1987. So, do you do skin checks for moles here?",
+      "interrupted": false
+    },
+    {
+      "t": 49.4,
+      "end": 50.4,
+      "speaker": "AGENT",
+      "text": "Thanks, Kevin.",
+      "interrupted": false
+    },
+    {
+      "t": 50.6,
+      "end": 54.0,
+      "speaker": "AGENT",
+      "text": "Could you please spell your last name for me just to make sure I have it right?",
+      "interrupted": false
+    },
+    {
+      "t": 54.1,
+      "end": 58.1,
+      "speaker": "AGENT",
+      "text": "And can you confirm your date of birth as October second nineteen eighty seven?",
+      "interrupted": false
+    },
+    {
+      "t": 59.3,
+      "end": 71.9,
+      "speaker": "PATIENT",
+      "text": "Yeah, that's right. And my last name is O'Brien, O-apostrophe-B-R-I-E-N. So, do you offer skin checks here or should I go somewhere else?",
+      "interrupted": false
+    },
+    {
+      "t": 75.1,
+      "end": 85.1,
+      "speaker": "AGENT",
+      "text": "We can help with that, but I need to confirm your details first. Could you tell me the phone number you have on file with us? If you're not sure, just let me know, and I'll confirm your name and date of birth again.",
+      "interrupted": false
+    },
+    {
+      "t": 85.3,
+      "end": 93.6,
+      "speaker": "PATIENT",
+      "text": "My phone number is 805-555-0128. So, can I book the skin check now?",
+      "interrupted": false
+    },
+    {
+      "t": 97.7,
+      "end": 102.1,
+      "speaker": "AGENT",
+      "text": "I have your phone number as eight zero five five five five zero one two eight",
+      "interrupted": false
+    },
+    {
+      "t": 102.3,
+      "end": 103.7,
+      "speaker": "AGENT",
+      "text": "and your date of birth",
+      "interrupted": false
+    },
+    {
+      "t": 104.2,
+      "end": 108.0,
+      "speaker": "AGENT",
+      "text": "as October second nineteen eighty seven. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 108.4,
+      "end": 112.1,
+      "speaker": "PATIENT",
+      "text": "Yeah, that's correct. So, can we set up the appointment for the skin check?",
+      "interrupted": false
+    },
+    {
+      "t": 116.8,
+      "end": 126.6,
+      "speaker": "AGENT",
+      "text": "I can't find a matching record for you in our system. I'll connect you to our patient support team so they can help you with booking your appointment. Please stay on the line.",
+      "interrupted": false
+    },
+    {
+      "t": 126.7,
+      "end": 128.6,
+      "speaker": "AGENT",
+      "text": "Transferring you now. Thank you.",
+      "interrupted": false
+    },
+    {
+      "t": 129.3,
+      "end": 133.5,
+      "speaker": "PATIENT",
+      "text": "Thanks for your help. I'll wait for the patient support",
+      "interrupted": true
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_detection": 0.59,
+      "llm_and_tts": 0.86,
+      "total": 1.45
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.23,
+      "total": 0.83
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.36,
+      "total": 0.97
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 1.12,
+      "total": 1.72
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.15,
+      "total": 0.75
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.34,
+      "total": 0.94
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.68,
+      "total": 1.29
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "room": "call-20261014-221504-wrong_service",
+  "scenario": "wrong_service",
+  "started_at": "2026-10-15T05:15:44+00:00",
+  "duration_s": 143.1,
+  "ended_by": "patient",
+  "caller_number": "+13144642661",
+  "dialed": "+18054398008",
+  "recording": "recording.ogg",
+  "providers": {
+    "stt": "deepgram nova-3",
+    "llm": "openai gpt-4.1-mini",
+    "tts": "cartesia sonic-3",
+    "vad": "silero",
+    "turn_detection": "livekit turn-detector (english)"
+  },
+  "saved_at": "2026-10-15T05:18:07+00:00"
+}

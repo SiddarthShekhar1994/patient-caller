@@ -1,0 +1,19 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?
+[00:13] PATIENT: Hey, I'm calling to get a refill on my ibuprofen eight hundred, please.
+[00:20] AGENT: I see you're calling from the number we have on file. Am I speaking with Maria?
+[00:25] PATIENT: Oh, actually it's Robert Alvarez. Sorry if that wasn't clear. Can I get that ibuprofen refill?
+[00:34] AGENT: No problem. Robert.
+[00:36] AGENT: Please provide your full date of birth.
+[00:38] PATIENT: Sure, it's March eleventh, nineteen seventy-two. But, actually, my knee's been worse lately. Can I book an appointment instead?
+[00:51] AGENT: I can help with that.
+[00:52] AGENT: Before we continue, could you please spell your first and last name to make sure I have it correct?
+[00:57] PATIENT: Yeah, no problem. It's Robert, R-O-B-E-R-T. Alvarez, A-L-V-A-R-E-Z. So, do you have any openings?
+[01:11] AGENT: To help find your record, do you want to use the phone number you have on file with us?
+[01:15] AGENT: If so, please tell me that number. If you're not sure, I can confirm your name and date of birth again instead. Which would you prefer?
+[01:22] PATIENT: Let's go with the phone number. It's 805-555-0193. So, any appointment times?
+[01:34] AGENT: I have your phone number as eight zero five five five five zero one nine three And your date of birth as March eleventh nineteen seventy two. Is that correct?
+[01:45] PATIENT: Yes, that's right. So, when's the earliest I can come in? Also, can you still send that ibuprofen refill while we're at it?
+[02:00] AGENT: I'm unable to find your record in our with the information provided. I can connect you to our patient support team for help, Would you like to continue with me, or should I transfer you now?
+[02:11] PATIENT: Let's try with patient support, please. But can you just hold on a sec? I really need that appointment and the refill [cut off]
+[02:17] AGENT: Chest ringing now. Thank you.
+[02:20] PATIENT: Thanks for your help. I'll [cut off]

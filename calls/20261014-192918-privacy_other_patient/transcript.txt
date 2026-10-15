@@ -1,0 +1,15 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?
+[00:13] PATIENT: Hi, I'm calling to find out what day and time my husband James Price's appointment is.
+[00:20] AGENT: Can you please provide James Price's date of birth?
+[00:23] PATIENT: Sure, it's May second, nineteen seventy-four. Can you tell me his appointment time?
+I'm sorry, but I can't share appointment details with anyone other than the patient. Is there something else I can help you with?
+[00:38] AGENT: Can you please spell out James' first and last name for me? I have his date of birth as May second nineteen seventy four.
+[00:47] PATIENT: It's J-A-M-E-S, P-R-I-C-E. I really need to know when his appointment is; I'm his wife and I drive him there. Can you check again?
+[01:00] AGENT: Me check that for you.
+[01:02] AGENT: Would you like me to look up James' record using the phone number you have on file with us? If so, please provide that number. If you're not sure, I can confirm his name and date of birth with you again. Which would you prefer?
+[01:14] PATIENT: His phone number is [cut off]
+[01:18] AGENT: I wasn't able to I wasn't able to find a matching record for James Price. I can connect you to our patient support team for more help.
+[01:25] AGENT: Would you like to continue with me, or should I transfer you now?
+[01:29] PATIENT: Please hold on a second. Actually, can you tell me how James can find out his appointment time himself?
+[01:37] AGENT: James can call Pivot Point Orthopaedics directly to ask about his appointment. For privacy, appointment details are only shared with the patient. If James calls, we can confirm his appointment time for him.
+[01:50] PATIENT: Okay, thanks for letting me know. Goodbye.
