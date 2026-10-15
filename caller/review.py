@@ -14,6 +14,7 @@ from openai import AsyncOpenAI
 
 from .recording import CALLS_DIR
 from .scenarios import SCENARIO_DIR
+from .transcript import redact
 
 SILENCE_FLAG_S = 3.0
 OUT_PATH = CALLS_DIR.parent / "bug_candidates.md"
@@ -76,7 +77,7 @@ async def run_review(model: str) -> Path:
         gaps.sort()
         header += (f"\nOur bot's reply gap (their last word to our first audio) over {len(gaps)} replies:"
                    f" median {gaps[len(gaps) // 2]:.1f}s, slowest {gaps[-1]:.1f}s.\n")
-    OUT_PATH.write_text(header + "\n".join(sections), encoding="utf-8")
+    OUT_PATH.write_text(redact(header + "\n".join(sections)), encoding="utf-8")
     return OUT_PATH
 
 
@@ -126,12 +127,13 @@ def _scenario_notes(scenario_id: str) -> str:
 
 
 async def _ask_json(model: str, system: str, user: str) -> dict:
-    resp = await AsyncOpenAI().chat.completions.create(
-        model=model,
-        temperature=0,
-        response_format={"type": "json_object"},
-        messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
-    )
+    async with AsyncOpenAI() as client:
+        resp = await client.chat.completions.create(
+            model=model,
+            temperature=0,
+            response_format={"type": "json_object"},
+            messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
+        )
     return json.loads(resp.choices[0].message.content or "{}")
 
 
@@ -143,3 +145,17 @@ def _fmt_line(line: dict) -> str:
 def _mmss(seconds: float) -> str:
     m, s = divmod(int(seconds), 60)
     return f"{m:02d}:{s:02d}"
+
+
+def redact_saved_calls() -> int:
+    """Mask the company name in transcripts saved before redaction existed."""
+    changed = 0
+    paths = [*CALLS_DIR.rglob("transcript.txt"), *CALLS_DIR.rglob("transcript.json"), OUT_PATH]
+    for path in paths:
+        if path.is_file():
+            old = path.read_text(encoding="utf-8")
+            new = redact(old)
+            if new != old:
+                path.write_text(new, encoding="utf-8")
+                changed += 1
+    return changed

@@ -7,6 +7,7 @@ mid-call still leaves everything said so far on disk.
 """
 
 import json
+import re
 import time
 from pathlib import Path
 
@@ -14,6 +15,15 @@ from livekit.agents import AgentSession
 
 # The session's "user" is the clinic's receptionist agent; "assistant" is our patient.
 _SPEAKER = {"user": "AGENT", "assistant": "PATIENT"}
+
+# The test line's greeting names the company that runs it. That name must not
+# end up in the repo, so it's masked in everything we save (and isn't spelled
+# out here either).
+_COMPANY = re.compile(r"pretty\W*good\W*a\W?i\b|\bp\W?g\W?a\W?i\b", re.IGNORECASE)
+
+
+def redact(text: str) -> str:
+    return _COMPANY.sub("[company]", text)
 
 
 class Transcript:
@@ -35,8 +45,13 @@ class Transcript:
         @session.on("user_state_changed")
         def _on_user(ev) -> None:
             if ev.new_state == "speaking":
-                if self._started["user"] is None:
-                    self._started["user"] = time.time()
+                now = time.time()
+                # A fresh stretch of speech after a real pause starts a new turn, even if
+                # the last one never became a transcript line (e.g. a skipped reply).
+                if self._started["user"] is None or (
+                    self._user_stopped and now - self._user_stopped > 2.0
+                ):
+                    self._started["user"] = now
             elif ev.old_state == "speaking":
                 self._user_stopped = time.time()
 
@@ -86,7 +101,7 @@ class Transcript:
         t0 = self.t0 or started
         offset = max(0.0, started - t0)
         line = {"t": round(offset, 1), "end": round(max(offset, ended - t0), 1),
-                "speaker": speaker, "text": text, "interrupted": interrupted}
+                "speaker": speaker, "text": redact(text), "interrupted": interrupted}
         self.lines.append(line)
         formatted = format_line(line)
         print(formatted, flush=True)
@@ -94,6 +109,10 @@ class Transcript:
             f.write(formatted + "\n")
 
     def save_json(self, scenario, goals_reached: list[bool | None]) -> None:
+        # Lines were appended as each turn finished; an interruption can finish them
+        # out of order, so the final files are sorted by start time.
+        self.lines.sort(key=lambda line: line["t"])
+        self._txt.write_text(self.as_text() + "\n", encoding="utf-8")
         data = {
             "scenario": scenario.id,
             "title": scenario.title,

@@ -13,6 +13,10 @@ from .telephony import hang_up
 _LEAK = re.compile(r"\s*functions\.\w+\([^)]*\)")
 _LEAK_START = "functions."
 
+# "This call may be recorded for quality and training purposes." is not a hello.
+# A person waits for the actual greeting instead of answering it.
+_DISCLAIMER = re.compile(r"\brecorded\b.*\b(quality|training)\b", re.IGNORECASE)
+
 
 def build_instructions(s: Scenario) -> str:
     p = s.persona
@@ -47,6 +51,9 @@ class PatientAgent(Agent):
     async def on_user_turn_completed(self, turn_ctx, new_message) -> None:
         # Once we've said goodbye, the receptionist's "bye" shouldn't start a new reply.
         if self._ending:
+            raise StopResponse()
+        text = new_message.text_content or ""
+        if _DISCLAIMER.search(text) and "?" not in text:
             raise StopResponse()
 
     @function_tool

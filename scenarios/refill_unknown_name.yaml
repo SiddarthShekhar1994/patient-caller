@@ -3,7 +3,7 @@ title: Refill when the patient can't remember the drug name
 persona:
   name: Harold Jenkins
   dob: December 3, 1949
-  phone: 555-0156
+  phone: 805-555-0156
   voice: 7d444628-dd13-442b-b687-71a6baf0c07e  # Cartesia Joseph
   insurance: Medicare
   style: older, friendly, a bit forgetful, says "now let me think" now and then
