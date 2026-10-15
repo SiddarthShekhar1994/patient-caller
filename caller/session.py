@@ -42,9 +42,9 @@ async def entrypoint(ctx: JobContext) -> None:
     log.info("scenario %s in room %s", scenario.id, ctx.room.name)
 
     session = AgentSession(
-        # Phone audio is 8 kHz narrowband. LiveKit resamples the track to 8 kHz
-        # before Deepgram, so we send what the line actually carries.
-        stt=deepgram.STT(model="nova-3", language="en-US", sample_rate=8000),
+        # The room audio arrives already resampled to 16 kHz (see RoomOptions below),
+        # which Deepgram and Silero both take natively, so neither resamples again.
+        stt=deepgram.STT(model="nova-3", language="en-US", sample_rate=16000),
         llm=openai.LLM(model=cfg.llm_model, temperature=0.8),
         tts=cartesia.TTS(model="sonic-3", voice=scenario.persona.get("voice", DEFAULT_VOICE)),
         vad=ctx.proc.userdata["vad"],

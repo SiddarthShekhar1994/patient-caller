@@ -29,3 +29,8 @@ Change: every persona now has a ten-digit number (805-555-01xx).
 ## 2026-10-15: Clinic greeting named its parent company
 Heard: from 2026-10-15 on, the greeting at [00:07] includes the name of the company behind the test line. That name must not appear anywhere in this repo.
 Change: transcript.py masks it as "[company]" in everything saved. `py -m caller redact` cleans transcripts saved before the fix.
+
+## 2026-10-15: Worker crashed in LiveKit's resampler on Windows
+Heard: no audio problem, but mid-batch a "Microsoft Visual C++ Runtime Library: Assertion failed" dialog popped up from livekit_ffi.dll (soxr fft4g_cache.h, LSX_FFT_BR == NULL), freezing the worker.
+Cause: soxr, the resampler bundled in LiveKit's native library, keeps a shared FFT cache. Several resamplers being created and torn down at once can trip its sanity check, and the Windows build shows that as a blocking dialog. We were adding two resamplers ourselves: room audio at 24 kHz converted to 8 kHz for Deepgram and to 16 kHz for Silero VAD.
+Change: room audio input is now 16 kHz (`AudioInputOptions(sample_rate=16000)`) and Deepgram takes 16 kHz, so neither STT nor VAD creates a resampler of its own.
