@@ -4,6 +4,7 @@ Terminal 1:  py -m caller worker                          (leave it running)
 Terminal 2:  py -m caller run --scenario new_patient_booking
              py -m caller run --all                       (one call at a time)
              py -m caller voices                          (list Cartesia voices)
+             py -m caller review                          (writes bug_candidates.md)
 """
 
 import argparse
@@ -24,6 +25,8 @@ def main() -> None:
     which.add_argument("--all", action="store_true", help="every scenario, one at a time")
     run.add_argument("--pause", type=int, default=20, help="seconds between calls with --all")
     sub.add_parser("voices", help="list English Cartesia voices to pick persona voices from")
+    review = sub.add_parser("review", help="scan saved calls and write bug_candidates.md")
+    review.add_argument("--model", help="OpenAI model for the review (default: LLM_MODEL)")
     args = parser.parse_args()
 
     cfg = load_config()  # fails fast on a bad .env, and loads it into os.environ
@@ -37,6 +40,11 @@ def main() -> None:
         cli.run_app(server)
     elif args.cmd == "voices":
         _list_voices()
+    elif args.cmd == "review":
+        from .review import run_review
+
+        out = asyncio.run(run_review(args.model or cfg.llm_model))
+        print(f"Wrote {out.name}. Listen to each timestamp before trusting it.")
     else:
         ids = list_scenario_ids() if args.all else [args.scenario]
         for sid in ids:

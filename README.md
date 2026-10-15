@@ -6,7 +6,7 @@ It runs on LiveKit Agents in pipeline mode: Deepgram for speech-to-text, OpenAI 
 
 The bot can only dial one number, the clinic's test line. That number is hard-coded in `caller/config.py` and checked again right before every dial.
 
-Status: Phase 3. Fourteen scenarios, one call at a time or all in a row. Each call is recorded and transcribed into its own folder under `calls/`.
+Fourteen scenarios, one call at a time or all in a row. Each call is recorded and transcribed into its own folder under `calls/`. How it works and why each piece was chosen: [ARCHITECTURE.md](ARCHITECTURE.md). What changed after listening to calls: [ITERATIONS.md](ITERATIONS.md). Bugs found in the clinic agent: [BUG_REPORT.md](BUG_REPORT.md).
 
 ## Install (Windows PowerShell)
 
@@ -118,3 +118,29 @@ py -m caller run --all --pause 20
 ```
 
 Scenarios live in `scenarios/*.yaml`: persona (name, date of birth, phone, insurance, speaking style, optional `voice` and `extra` details), ordered goals, a done condition, flags, and notes on what to watch for in the clinic agent. `flags.barge_in` makes the patient deliberately cut the receptionist off once; only `barge_in_dob_correction` uses it. To pick persona voices, `py -m caller voices` lists the English Cartesia voices with their IDs. The number dialed is never read from them. It's a constant in `caller/config.py`.
+
+## Finding bugs
+
+```powershell
+py -m caller review
+```
+
+This reads every `calls/*/transcript.json`, asks the LLM to check each call against a rubric (unverifiable claims, bookings at odd hours, ignored constraints, medical advice, privacy slips, losing the thread after an interruption, repetition, goals not reached) and flags long silences from the timestamps. It writes `bug_candidates.md` with the call folder and timestamp for each. They're candidates only. I listened to each one before writing `BUG_REPORT.md`.
+
+## Layout
+
+```
+caller/
+  __main__.py     CLI: worker, run, voices, review
+  config.py       .env loading and the dial guard
+  scenarios.py    scenario loader and validation
+  agent.py        patient persona prompt, end_call tool
+  session.py      one call: STT, LLM, TTS, VAD, turn detection, saving
+  telephony.py    dial over SIP, hang up, dispatch calls
+  transcript.py   timestamped transcript and reply gaps
+  recording.py    copy the session recording, write meta.json
+  bargein.py      the deliberate interruption for one scenario
+  review.py       goal check and bug candidates
+scenarios/        one YAML per call
+calls/            one folder per call: recording.ogg, transcript.txt/.json, meta.json
+```

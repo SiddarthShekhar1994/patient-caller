@@ -25,6 +25,7 @@ class Transcript:
         self._started = {"user": None, "assistant": None}
         self._eou: float | None = None
         self._eou_at: float | None = None
+        self._user_stopped: float | None = None
         self._txt = call_dir / "transcript.txt"
 
     def start_clock(self, t0: float) -> None:
@@ -33,8 +34,11 @@ class Transcript:
     def attach(self, session: AgentSession) -> None:
         @session.on("user_state_changed")
         def _on_user(ev) -> None:
-            if ev.new_state == "speaking" and self._started["user"] is None:
-                self._started["user"] = time.time()
+            if ev.new_state == "speaking":
+                if self._started["user"] is None:
+                    self._started["user"] = time.time()
+            elif ev.old_state == "speaking":
+                self._user_stopped = time.time()
 
         @session.on("agent_state_changed")
         def _on_agent(ev) -> None:
@@ -57,7 +61,11 @@ class Transcript:
             # A turn can span several bursts of speech; keep the first one, then reset.
             started = self._started[role] or item.created_at
             self._started[role] = None
-            self._add(_SPEAKER[role], text, started, getattr(item, "interrupted", False))
+            # Our own lines are added once they finish playing, so "now" is their end.
+            ended = time.time()
+            if role == "user" and self._user_stopped and self._user_stopped >= started:
+                ended = self._user_stopped
+            self._add(_SPEAKER[role], text, started, ended, getattr(item, "interrupted", False))
 
         @session.on("metrics_collected")
         def _on_metrics(ev) -> None:
@@ -74,9 +82,11 @@ class Transcript:
         print(f"        reply gap {total:.1f}s  (turn detection {turn_detection:.1f}"
               f" + llm/tts {to_audio:.1f})", flush=True)
 
-    def _add(self, speaker: str, text: str, started: float, interrupted: bool) -> None:
-        offset = max(0.0, started - (self.t0 or started))
-        line = {"t": round(offset, 1), "speaker": speaker, "text": text, "interrupted": interrupted}
+    def _add(self, speaker: str, text: str, started: float, ended: float, interrupted: bool) -> None:
+        t0 = self.t0 or started
+        offset = max(0.0, started - t0)
+        line = {"t": round(offset, 1), "end": round(max(offset, ended - t0), 1),
+                "speaker": speaker, "text": text, "interrupted": interrupted}
         self.lines.append(line)
         formatted = format_line(line)
         print(formatted, flush=True)
