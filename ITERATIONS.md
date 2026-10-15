@@ -34,3 +34,9 @@ Change: transcript.py masks it as "[company]" in everything saved. `py -m caller
 Heard: no audio problem, but mid-batch a "Microsoft Visual C++ Runtime Library: Assertion failed" dialog popped up from livekit_ffi.dll (soxr fft4g_cache.h, LSX_FFT_BR == NULL), freezing the worker.
 Cause: soxr, the resampler bundled in LiveKit's native library, keeps a shared FFT cache. Several resamplers being created and torn down at once can trip its sanity check, and the Windows build shows that as a blocking dialog. We were adding two resamplers ourselves: room audio at 24 kHz converted to 8 kHz for Deepgram and to 16 kHz for Silero VAD.
 Change: room audio input is now 16 kHz (`AudioInputOptions(sample_rate=16000)`) and Deepgram takes 16 kHz, so neither STT nor VAD creates a resampler of its own.
+It damaged two calls from that batch, which I deleted: hours_address_parking at 19:13 (the recording stops at 1:11 of a three-minute call) and barge_in_dob_correction at 19:14 (no recording saved). Each scenario has another complete call.
+
+## 2026-10-15: Patient said the receptionist's line
+Heard: privacy_other_patient at [00:23]. After giving her husband's birthday, the patient went on in the same breath: "I'm sorry, but I can't share appointment details with anyone other than the patient. Is there something else I can help you with?" That's the receptionist's job, in the patient's voice.
+Cause: the model sometimes writes a second paragraph after its answer. It happened in three calls (cancel_with_fee at [01:03] and refill_named_med at [01:54] too). Twice it was just a second turn's worth of talking; here it wrote the other side of the conversation.
+Change: `PatientAgent.llm_node` stops passing text to TTS at the first line break of a reply (tool calls still go through, so a goodbye plus end_call works). The prompt now says to keep each turn on one line and only ever say the patient's own words.

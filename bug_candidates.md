@@ -34,15 +34,6 @@ Scenario: Patient cuts in mid-explanation to correct their date of birth. Goals 
 - **[03:04]** goal not reached (high, clinic agent): Agent failed to book the follow-up visit for knee pain next week as requested, instead ending the call without securing an appointment or alternative solution.
 
 
-## 20261014-191313-hours_address_parking
-
-Scenario: Office hours, address and parking. Goals reached: yes, yes, no.
-
-- **[00:18]** long silence (medium, clinic agent): 3.2s of silence before AGENT answered.
-- **[00:43]** long silence (medium, clinic agent): 3.0s of silence before AGENT answered.
-- **[00:55]** invented details (medium, clinic agent): The agent did not provide any information about parking or parking costs when asked, failing to address the patient's question about 'where's the best place to park? Is there a cost for parking or anything?'
-
-
 ## 20261014-191835-cancel_with_fee
 
 Scenario: Canceling an appointment and asking about a fee. Goals reached: no, no, no.

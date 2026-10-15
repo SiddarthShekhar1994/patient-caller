@@ -35,7 +35,7 @@ You're done when: {s.done_when}
 {extra}
 The receptionist answers first. Reply to their greeting by saying why you're calling.
 
-How you talk: {style}. It's a phone call, so keep each turn to one or two short sentences with one idea. Use contractions and the odd "um" or "yeah, that works". No lists, no markdown. Say dates and times the way people do out loud, like "next Tuesday at ten". Spell nothing unless asked.
+How you talk: {style}. It's a phone call, so keep each turn to one or two short sentences with one idea, all on one line. Only ever say {p['name'].split()[0]}'s words; never write the receptionist's. Use contractions and the odd "um" or "yeah, that works". No lists, no markdown. Say dates and times the way people do out loud, like "next Tuesday at ten". Spell nothing unless asked.
 
 Answer their questions, then steer back to your next goal; if they drift, politely bring it back. Never invent details you weren't given.
 
@@ -67,7 +67,10 @@ class PatientAgent(Agent):
         await hang_up()
 
     async def llm_node(self, chat_ctx, tools, model_settings):
-        held, leaked = "", False
+        # `done` goes true at the reply's first line break. Anything after it
+        # isn't spoken: in test calls that's where the model started writing a
+        # second turn, once even the receptionist's side. Tool calls still pass.
+        held, leaked, said, done = "", False, False, False
         async for chunk in Agent.default.llm_node(self, chat_ctx, tools, model_settings):
             if isinstance(chunk, str):
                 text = chunk
@@ -81,12 +84,17 @@ class PatientAgent(Agent):
                 continue
             clean, held, found = _strip_leaks(held + text)
             leaked |= found
-            if clean:
-                yield clean
+            if clean and not done:
+                clean, done = _first_line(clean, said)
+                said |= bool(clean.strip())
+                if clean:
+                    yield clean
 
         clean, _, found = _strip_leaks(held, final=True)
-        if clean:
-            yield clean
+        if clean and not done:
+            clean, done = _first_line(clean, said)
+            if clean:
+                yield clean
         if (leaked or found) and not self._ending:
             # Treat the written-out call as the real thing.
             self._ending = True
@@ -115,6 +123,13 @@ def _strip_leaks(buf: str, final: bool = False) -> tuple[str, str, bool]:
             if _LEAK_START.startswith(cleaned[-k:]):
                 return cleaned[:-k], cleaned[-k:], found
     return cleaned, "", found
+
+
+def _first_line(text: str, said: bool) -> tuple[str, bool]:
+    """Cut text at the first line break that comes after some words. Returns (text, cut)."""
+    start = 0 if said else len(text) - len(text.lstrip())
+    idx = text.find("\n", start)
+    return (text, False) if idx == -1 else (text[:idx], True)
 
 
 async def _let_them_finish(session: AgentSession, quiet_s: float = 1.5, max_s: float = 8.0) -> None:
