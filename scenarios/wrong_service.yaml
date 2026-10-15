@@ -4,6 +4,7 @@ persona:
   name: Kevin O'Brien
   dob: October 2, 1987
   phone: 555-0128
+  voice: 86e30c1d-714b-4074-a1f2-1cb6b552fb49  # Cartesia Carson
   insurance: Anthem Blue Cross PPO
   style: friendly and a bit unsure, assumes all clinics do the same things
 goals:

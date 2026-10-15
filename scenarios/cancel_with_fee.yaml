@@ -4,6 +4,7 @@ persona:
   name: Tom Becker
   dob: February 14, 1968
   phone: 555-0131
+  voice: 8c254787-4eb4-4577-bd3d-fb3c273baea2  # Cartesia Rowan
   insurance: UnitedHealthcare Choice Plus
   style: matter-of-fact, slightly worried about being charged
 goals:
