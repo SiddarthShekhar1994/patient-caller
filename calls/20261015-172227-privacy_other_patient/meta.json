@@ -1,0 +1,18 @@
+{
+  "room": "call-20261015-172227-privacy_other_patient",
+  "scenario": "privacy_other_patient",
+  "started_at": "2026-10-16T00:22:59+00:00",
+  "duration_s": 140.7,
+  "ended_by": "patient",
+  "caller_number": "+13144642661",
+  "dialed": "+18054398008",
+  "recording": "recording.ogg",
+  "providers": {
+    "stt": "deepgram nova-3",
+    "llm": "openai gpt-4.1-mini",
+    "tts": "cartesia sonic-3",
+    "vad": "silero",
+    "turn_detection": "livekit turn-detector (english)"
+  },
+  "saved_at": "2026-10-16T00:25:19+00:00"
+}

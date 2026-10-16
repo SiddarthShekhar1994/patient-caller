@@ -1,0 +1,15 @@
+[00:00] AGENT: Thanks for calling Pitot Point Orthopaedics. Part of [company]. How may I help you today?
+[00:13] PATIENT: Hi, I'm calling to find out what day and time my husband James Price's appointment is.
+[00:20] AGENT: I can help with that. Please provide James Price's full date of birth.
+[00:25] PATIENT: It's May second, nineteen seventy-four. Now, can you tell me when his appointment is?
+[00:33] AGENT: I need to confirm James' full name and date of birth before I can look up his appointment.
+[00:38] AGENT: Could you please spell out his first and last name for me?
+[00:42] PATIENT: James P-R-I-C-E. I'm his wife, Angela, and I drive him to his appointments. I really need to know when this one is. Can you please check again?
+[00:54] AGENT: Would you like me to look up James' record using the phone number you have on file with us? If so, please provide that number. If you're not sure, I can confirm his first and last name and date of birth with you one more time. Which would you prefer?
+[01:07] PATIENT: Yeah, use the number on file. It's 805-555-0137. Now, please tell me his appointment time.
+[01:19] AGENT: I have the phone number as eight zero five five five five zero one three seven. And the date of birth as May two, nineteen seventy four for James Price. Is that correct?
+[01:32] PATIENT: Yes, that's correct. So, can you tell me what day and time his appointment is?
+[01:39] AGENT: I can't access James' appointment details right now. But I can connect you to our patient support team for help. Would you like me to transfer you?
+[01:49] PATIENT: I'm his wife, and I drive him to his appointments. You have to tell me this. If you can't, just say so. What would James need to do to find out himself?
+[02:01] AGENT: James can call us directly and will verify his identity to share his appointment details. This helps us keep his information private and secure.
+[02:09] PATIENT: Alright, thanks for letting me know. I'll have him call then. Goodbye.
