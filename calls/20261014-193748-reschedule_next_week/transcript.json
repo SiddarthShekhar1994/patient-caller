@@ -1,0 +1,184 @@
+{
+  "scenario": "reschedule_next_week",
+  "title": "Rescheduling an existing appointment to next week",
+  "persona": {
+    "name": "Priya Raman",
+    "dob": "November 9, 1992",
+    "phone": "805-555-0123",
+    "voice": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+    "insurance": "Cigna Open Access",
+    "style": "friendly, apologetic about the change, speaks a bit fast"
+  },
+  "goals": [
+    {
+      "goal": "Explain you have an appointment this Thursday morning and need to move it.",
+      "reached": true
+    },
+    {
+      "goal": "Ask to move it to any afternoon next week.",
+      "reached": true
+    },
+    {
+      "goal": "Confirm the new day and time, and check that the Thursday one is cancelled.",
+      "reached": false
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.5,
+      "end": 12.5,
+      "speaker": "AGENT",
+      "text": "Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 12.9,
+      "end": 19.2,
+      "speaker": "PATIENT",
+      "text": "Hi, I've got an appointment this Thursday morning, but I need to move it to an afternoon next week if possible.",
+      "interrupted": false
+    },
+    {
+      "t": 23.3,
+      "end": 27.5,
+      "speaker": "AGENT",
+      "text": "I see you're calling from the number we have on file. Am I speaking with Maria?",
+      "interrupted": false
+    },
+    {
+      "t": 27.9,
+      "end": 33.7,
+      "speaker": "PATIENT",
+      "text": "Actually, it's Priya Raman calling. Could you check my appointment",
+      "interrupted": true
+    },
+    {
+      "t": 35.6,
+      "end": 41.4,
+      "speaker": "AGENT",
+      "text": "Please provide I'll need your full name and date of birth to look up your appointment. Could you share those details?",
+      "interrupted": false
+    },
+    {
+      "t": 41.9,
+      "end": 48.2,
+      "speaker": "PATIENT",
+      "text": "Sure, it's Priya Raman, and my date of birth is November 9, 1992. Thanks!",
+      "interrupted": false
+    },
+    {
+      "t": 50.7,
+      "end": 62.4,
+      "speaker": "AGENT",
+      "text": "One moment while I look up your information. Just to confirm, I have your name as Priya Raman. And your date of birth as November ninth nineteen ninety two. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 63.2,
+      "end": 70.7,
+      "speaker": "PATIENT",
+      "text": "Yes, that's right. So, about my appointment this Thursday morning\u2014I need to move it to any afternoon next week. Could you help with that?",
+      "interrupted": false
+    },
+    {
+      "t": 75.7,
+      "end": 87.1,
+      "speaker": "AGENT",
+      "text": "Would you like me to look up your record using the phone number you have on file with us? If so, please tell me the number you use with our office. If you're not sure I can confirm your name and date of birth again, just let me know.",
+      "interrupted": false
+    },
+    {
+      "t": 88.0,
+      "end": 101.0,
+      "speaker": "PATIENT",
+      "text": "Yes, please use the number on file. It's 805-555-0123. Thanks! Now, can we check what afternoons are available next week to move my appointment?",
+      "interrupted": false
+    },
+    {
+      "t": 105.5,
+      "end": 114.6,
+      "speaker": "AGENT",
+      "text": "I have your phone number as eight zero five five five five zero one two three and your date of birth is November ninth nineteen ninety two. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 115.6,
+      "end": 120.9,
+      "speaker": "PATIENT",
+      "text": "Yes, that's correct. So, could you please tell me what afternoons next week you have open for my appointment?",
+      "interrupted": false
+    },
+    {
+      "t": 125.5,
+      "end": 134.5,
+      "speaker": "AGENT",
+      "text": "I'm unable to find your record in our system. I can connect you to our patient support team or if you'd like, I can document your request for follow-up.",
+      "interrupted": false
+    },
+    {
+      "t": 134.5,
+      "end": 137.4,
+      "speaker": "AGENT",
+      "text": "Would you like to speak with someone from our support team now?",
+      "interrupted": false
+    },
+    {
+      "t": 141.6,
+      "end": 147.0,
+      "speaker": "PATIENT",
+      "text": "Yes, that would be great, thank you. I'd like to get this sorted as soon as possible.",
+      "interrupted": false
+    },
+    {
+      "t": 150.9,
+      "end": 152.5,
+      "speaker": "AGENT",
+      "text": "Transferring you now. Thank you.",
+      "interrupted": false
+    },
+    {
+      "t": 154.6,
+      "end": 158.6,
+      "speaker": "AGENT",
+      "text": "Hello. You've reached the [company] test line. Goodbye.",
+      "interrupted": false
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_detection": 0.59,
+      "llm_and_tts": 0.44,
+      "total": 1.03
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.32,
+      "total": 0.92
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.55,
+      "total": 1.16
+    },
+    {
+      "turn_detection": 0.62,
+      "llm_and_tts": 0.77,
+      "total": 1.39
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.79,
+      "total": 1.4
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 1.01,
+      "total": 1.62
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 4.26,
+      "total": 4.86
+    }
+  ]
+}

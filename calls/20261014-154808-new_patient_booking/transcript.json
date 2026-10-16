@@ -1,0 +1,191 @@
+{
+  "scenario": "new_patient_booking",
+  "title": "New patient books a routine checkup, flexible on dates",
+  "persona": {
+    "name": "Maria Delgado",
+    "dob": "March 4, 1988",
+    "phone": "555-0142",
+    "insurance": "Blue Shield PPO",
+    "style": "warm, a bit chatty, says \"oh perfect\" when things work out"
+  },
+  "goals": [
+    {
+      "goal": "Say you're a new patient and want to book a routine checkup.",
+      "reached": true
+    },
+    {
+      "goal": "Take the first reasonable slot in the next two weeks; mornings are a little better.",
+      "reached": true
+    },
+    {
+      "goal": "Before hanging up, confirm the day and time back to them.",
+      "reached": true
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.4,
+      "speaker": "AGENT",
+      "text": "This call may be recorded for quality and training purposes.",
+      "interrupted": false
+    },
+    {
+      "t": 4.2,
+      "speaker": "AGENT",
+      "text": "Thanks for calling Pivot Point Orthopaedics. Part of [company] How may I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 13.1,
+      "speaker": "PATIENT",
+      "text": "Hi there! I'm a new patient and I'd like to book a routine checkup, please.",
+      "interrupted": false
+    },
+    {
+      "t": 20.0,
+      "speaker": "AGENT",
+      "text": "I see you're calling from the number we have on file.",
+      "interrupted": false
+    },
+    {
+      "t": 23.1,
+      "speaker": "AGENT",
+      "text": "Am I speaking with Maria?",
+      "interrupted": false
+    },
+    {
+      "t": 26.8,
+      "speaker": "PATIENT",
+      "text": "Yes, this is Maria.",
+      "interrupted": false
+    },
+    {
+      "t": 30.6,
+      "speaker": "AGENT",
+      "text": "Please provide your date of birth.",
+      "interrupted": false
+    },
+    {
+      "t": 33.3,
+      "speaker": "PATIENT",
+      "text": "Sure, it's March 4, 1988.",
+      "interrupted": false
+    },
+    {
+      "t": 39.7,
+      "speaker": "AGENT",
+      "text": "Thanks, Maria. Just to confirm, you're a new patient and want to schedule a routine checkup. Is that correct?",
+      "interrupted": false
+    },
+    {
+      "t": 47.9,
+      "speaker": "PATIENT",
+      "text": "Yes, that's right. I'd like to find the first available slot in the next two weeks, preferably in the morning if possible.",
+      "interrupted": false
+    },
+    {
+      "t": 57.7,
+      "speaker": "AGENT",
+      "text": "There are several morning openings this Thursday, October fifteenth.",
+      "interrupted": false
+    },
+    {
+      "t": 62.2,
+      "speaker": "AGENT",
+      "text": "With Abroker. At Tivot Point Orthopaedics. The earliest is at nine AM. Would you like to book that slot",
+      "interrupted": false
+    },
+    {
+      "t": 70.0,
+      "speaker": "PATIENT",
+      "text": "Oh perfect, yeah, nine AM this Thursday the fifteenth works for me. Could you please book that?",
+      "interrupted": false
+    },
+    {
+      "t": 77.9,
+      "speaker": "AGENT",
+      "text": "Your appointment is set for Thursday, October fifteenth at nine AM with doctor Adam Bricker at Pivot Point Orthopedics. Please bring your photo ID, insurance card, a list of your current medications, and any imaging discs you have.",
+      "interrupted": false
+    },
+    {
+      "t": 94.1,
+      "speaker": "AGENT",
+      "text": "Would you like me to send you a text message with these details?",
+      "interrupted": false
+    },
+    {
+      "t": 96.7,
+      "speaker": "PATIENT",
+      "text": "Thanks, but I think I'm good. Just to confirm, my appointment is Thursday at nine AM, October fifteenth with Dr. Bricker at Pivot Point Orthopedics, right?",
+      "interrupted": false
+    },
+    {
+      "t": 108.9,
+      "speaker": "AGENT",
+      "text": "That's correct. Your appointment is Thursday. October fifteenth at nine AM with doctor Adam Bricker at Pivot Point Orthopedics. You're all set.",
+      "interrupted": false
+    },
+    {
+      "t": 117.5,
+      "speaker": "PATIENT",
+      "text": "Great, thanks so much! Have a wonderful day. Bye!",
+      "interrupted": false
+    },
+    {
+      "t": 124.5,
+      "speaker": "AGENT",
+      "text": "Take care. Goodbye.",
+      "interrupted": false
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_end": 0.61,
+      "llm": -1.0,
+      "tts": 0.11,
+      "total": -0.28
+    },
+    {
+      "turn_end": 0.59,
+      "llm": -1.0,
+      "tts": 0.16,
+      "total": -0.25
+    },
+    {
+      "turn_end": 0.6,
+      "llm": -1.0,
+      "tts": 0.18,
+      "total": -0.22
+    },
+    {
+      "turn_end": 0.6,
+      "llm": -1.0,
+      "tts": 0.15,
+      "total": -0.25
+    },
+    {
+      "turn_end": 0.6,
+      "llm": -1.0,
+      "tts": 0.14,
+      "total": -0.26
+    },
+    {
+      "turn_end": 0.61,
+      "llm": -1.0,
+      "tts": 0.13,
+      "total": -0.26
+    },
+    {
+      "turn_end": 0.0,
+      "llm": -1.0,
+      "tts": 1.74,
+      "total": 0.74
+    },
+    {
+      "turn_end": 0.6,
+      "llm": -1.0,
+      "tts": 0.12,
+      "total": -0.27
+    }
+  ]
+}

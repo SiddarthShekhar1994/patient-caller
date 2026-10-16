@@ -1,0 +1,11 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?
+[00:13] PATIENT: Hi there! I've been having this annoying thing going on with my left shoulder, like it's aching and makes this clicking noise when I try to reach up high, like grabbing a book from a shelf. It's been a few weeks now, and I was wondering if it's something serious or if I should just be taking something for it?
+[00:28] AGENT: Could I get your full name and date of birth, please?
+[00:32] PATIENT: Sure, it's Dorothy Fletcher, and my birthday is May 19, 1953. What else do you need to know?
+[00:41] AGENT: Could you please spell your first and last name for me? I wanna make sure I have it exactly right.
+[00:47] PATIENT: Oh, sure thing! It's D-O-R-O-T-H-Y for Dorothy, and Fletcher is F-L-E-T-C-H-E-R. Anything else you need?
+[01:00] AGENT: Would you like me to look up your record using your phone number? If so, could you tell me the number you have on file with us?
+[01:06] AGENT: If you're not sure, I can confirm your name and date of birth again.
+[01:10] PATIENT: Yeah, let's try the phone number, then—it's 805-555-0114. That should help, right? And thanks for being so thorough! By the way, my grandson just learned how to ride his bike without training wheels—he's so proud. Anyway, back to me, do you think this shoulder thing sounds serious? Should I be [cut off]
+[01:29] AGENT: I wasn't able to find your record in our system. I can connect you to our patient support team so they can help you directly. Please stay on the line.
+[01:36] AGENT: Transferring you now. Thank you.

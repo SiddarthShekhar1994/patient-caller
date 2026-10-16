@@ -1,0 +1,28 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:07] PATIENT: Good morning, [cut off]
+[00:07] AGENT: Thanks for calling Pivot Point Orthopaedics.
+[00:13] AGENT: Part of [company]. How may I help you today?
+[00:14] PATIENT: I'm calling to book a follow-up visit for my knee pain sometime next week.
+[00:20] AGENT: I see you're calling from the number we have on file. Am I speaking with Maria?
+[00:25] PATIENT: No, this is Gerald Okafor. I'd like to book that appointment for myself.
+[00:32] AGENT: Please provide your date of birth. Gerald.
+[00:35] PATIENT: It's August twelfth, nineteen seventy-five.
+[00:47] PATIENT: Oh, sorry, sorry, I gave you the wrong year. It's nineteen fifty-seven, not seventy-five.
+[00:43] AGENT: Just to confirm, is your date of birth August twelfth nineteen fifty seven?
+[01:06] PATIENT: Yes, that's correct, August twelfth, nineteen fifty-seven. And about that appointment for next week, is there a slot available on Tuesday in the morning?
+[01:15] AGENT: Before I can check the schedule, could you please spell your first and last name for me?
+[01:20] PATIENT: Sure, it's G-E-R-A-L-D for Gerald, and O-K-A-F-O-R for Okafor. And yes, next Tuesday in the morning works if you have something.
+[01:32] AGENT: To look up your record, Could you tell me the phone number you have on file with us?
+[01:37] PATIENT: The number you have is 555-0108. Now, about that Tuesday appointment. Do you have any openings at ten o'clock?
+[01:47] AGENT: I need the four number you have on file to look up your record.
+[01:56] AGENT: Could you provide all ten digits, please?
+[01:56] PATIENT: Sure, it's 555-0108. Sorry, I didn't give you the full number before. Can you check for a ten o'clock appointment next Tuesday now?
+[02:08] AGENT: I need the full ten digit phone number.
+[02:11] AGENT: Including the area code that you have on file with us.
+[02:13] AGENT: You say the complete number for me?
+[02:17] PATIENT: Yes, the full number is 555-0108, but I don't have an area code to give you. If you need it, maybe you can check with what you have on file. Is there a slot at ten next Tuesday?
+[02:32] AGENT: I need either your full name, date of birth, and a complete ten digit phone number, or just your name and date of birth. To look up your record. Could you please spell your first and last name for me one more time along with your date of birth?
+[02:47] PATIENT: Alright, it's G-E-R-A-L-D O-K-A-F-O-R, and my date of birth is August twelfth, nineteen fifty-seven. Hopefully, that helps you find my record. Now, about that appointment next Tuesday at ten?
+[03:04] AGENT: I can't proceed further right now. But I can make sure our clinic support team follows up with you.
+[03:13] AGENT: Would you like me to connect you to our patient support team?
+[03:13] PATIENT: No, thank you. I appreciate your help. I'll try calling back later to book that appointment. Goodbye.

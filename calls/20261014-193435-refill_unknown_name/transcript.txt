@@ -1,0 +1,26 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company], How may I help you today?
+[00:13] PATIENT: Hi there, I'm calling to ask about getting a refill on a pill I take for back spasms.
+[00:22] AGENT: I see you're calling from the number we have on file. Am I speaking with Maria?
+[00:27] PATIENT: No, this is Harold Jenkins. Sorry if that was unclear. Could you check if you have me in your system?
+[00:35] AGENT: I can check for you. Please provide your full name and date of birth.
+[00:40] PATIENT: Sure, it's Harold Jenkins, December third, nineteen forty-nine.
+[00:48] AGENT: Just to confirm, I have your name as Harold Jenkins and your date of birth as December third nineteen forty nine. Is that correct?
+[00:56] PATIENT: Yeah, that's right. Now, about that pill refill for my back spasms. I don't recall the name exactly, but I think it's a small white pill starting with a C. Could you help me with that?
+[01:08] AGENT: Let me check your chart for your current medications and refill options. One moment.
+[01:13] PATIENT: Alright, take your time. Let me know what you find.
+[01:19] AGENT: Thanks for confirming your information. One moment while I look up your chart.
+[01:24] PATIENT: Okay, thank you. [cut off]
+[01:24] AGENT: Would you like me to look up
+[01:27] PATIENT: Sorry, I was [cut off]
+[01:28] AGENT: would you like me to look
+[01:32] PATIENT: I was just about to [cut off]
+[01:33] AGENT: No problem.
+[01:35] PATIENT: Thanks for your patience. Could you tell me if you found the medicine name or if you need me to try something else?
+[01:43] AGENT: To help find your record, could you please provide the phone number you have on file with us? If you're not sure, just let me know
+[01:53] PATIENT: Yeah, the phone number is eight-oh-five, five-five-five, oh-one-five-six.
+[02:00] AGENT: I'd have your phone number as eight zero five five five five zero one five six and your date of birth as December third nineteen forty nine. Is that correct?
+[02:12] PATIENT: Yes, that's right. Now, about the pill refill—I can't quite recall the name of the medicine. What do you suggest I do next to get it refilled?
+[02:23] AGENT: I wasn't able to find your record in our system. So I can't process the refill right now. I can connect you to our patient support team for more help. Would you like me to transfer you?
+[02:35] PATIENT: Yes, that works. Please connect me to the patient support team. Thanks.
+[02:39] AGENT: Transferring you now. Thank you.
+[02:42] AGENT: Hello.

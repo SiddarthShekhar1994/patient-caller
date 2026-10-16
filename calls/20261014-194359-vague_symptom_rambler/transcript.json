@@ -1,0 +1,127 @@
+{
+  "scenario": "vague_symptom_rambler",
+  "title": "Vague, rambling patient with a symptom",
+  "persona": {
+    "name": "Dorothy Fletcher",
+    "dob": "May 19, 1953",
+    "phone": "805-555-0114",
+    "voice": "d1d9c946-7cfc-4378-85a4-07d09827cb7e",
+    "style": "chatty and rambling, wanders off into stories about her grandson, never quite gets to the point",
+    "extra": "Your left shoulder has been aching and making a clicking sound for a few weeks, worse when you reach up to a shelf. You don't know what you need. Ask if it's something to worry about and whether you should take anything for it."
+  },
+  "goals": [
+    {
+      "goal": "Describe the shoulder problem in a roundabout way.",
+      "reached": true
+    },
+    {
+      "goal": "Ask whether it's serious and whether you should take something for it.",
+      "reached": true
+    },
+    {
+      "goal": "Let them decide what to do, and go along with a sensible next step.",
+      "reached": true
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.4,
+      "end": 12.7,
+      "speaker": "AGENT",
+      "text": "Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 13.4,
+      "end": 26.3,
+      "speaker": "PATIENT",
+      "text": "Hi there! I've been having this annoying thing going on with my left shoulder, like it's aching and makes this clicking noise when I try to reach up high, like grabbing a book from a shelf. It's been a few weeks now, and I was wondering if it's something serious or if I should just be taking something for it?",
+      "interrupted": false
+    },
+    {
+      "t": 28.8,
+      "end": 31.4,
+      "speaker": "AGENT",
+      "text": "Could I get your full name and date of birth, please?",
+      "interrupted": false
+    },
+    {
+      "t": 32.1,
+      "end": 39.0,
+      "speaker": "PATIENT",
+      "text": "Sure, it's Dorothy Fletcher, and my birthday is May 19, 1953. What else do you need to know?",
+      "interrupted": false
+    },
+    {
+      "t": 41.3,
+      "end": 46.6,
+      "speaker": "AGENT",
+      "text": "Could you please spell your first and last name for me? I wanna make sure I have it exactly right.",
+      "interrupted": false
+    },
+    {
+      "t": 47.4,
+      "end": 57.4,
+      "speaker": "PATIENT",
+      "text": "Oh, sure thing! It's D-O-R-O-T-H-Y for Dorothy, and Fletcher is F-L-E-T-C-H-E-R. Anything else you need?",
+      "interrupted": false
+    },
+    {
+      "t": 60.1,
+      "end": 66.1,
+      "speaker": "AGENT",
+      "text": "Would you like me to look up your record using your phone number? If so, could you tell me the number you have on file with us?",
+      "interrupted": false
+    },
+    {
+      "t": 66.2,
+      "end": 69.5,
+      "speaker": "AGENT",
+      "text": "If you're not sure, I can confirm your name and date of birth again.",
+      "interrupted": false
+    },
+    {
+      "t": 70.5,
+      "end": 91.3,
+      "speaker": "PATIENT",
+      "text": "Yeah, let's try the phone number, then\u2014it's 805-555-0114. That should help, right? And thanks for being so thorough! By the way, my grandson just learned how to ride his bike without training wheels\u2014he's so proud. Anyway, back to me, do you think this shoulder thing sounds serious? Should I be",
+      "interrupted": true
+    },
+    {
+      "t": 89.0,
+      "end": 96.3,
+      "speaker": "AGENT",
+      "text": "I wasn't able to find your record in our system. I can connect you to our patient support team so they can help you directly. Please stay on the line.",
+      "interrupted": false
+    },
+    {
+      "t": 96.6,
+      "end": 98.6,
+      "speaker": "AGENT",
+      "text": "Transferring you now. Thank you.",
+      "interrupted": false
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_detection": 0.59,
+      "llm_and_tts": 0.69,
+      "total": 1.28
+    },
+    {
+      "turn_detection": 0.62,
+      "llm_and_tts": 0.65,
+      "total": 1.27
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.79,
+      "total": 1.41
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.96,
+      "total": 1.56
+    }
+  ]
+}

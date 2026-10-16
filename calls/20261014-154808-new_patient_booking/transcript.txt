@@ -1,0 +1,19 @@
+[00:00] AGENT: This call may be recorded for quality and training purposes.
+[00:04] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company] How may I help you today?
+[00:13] PATIENT: Hi there! I'm a new patient and I'd like to book a routine checkup, please.
+[00:20] AGENT: I see you're calling from the number we have on file.
+[00:23] AGENT: Am I speaking with Maria?
+[00:26] PATIENT: Yes, this is Maria.
+[00:30] AGENT: Please provide your date of birth.
+[00:33] PATIENT: Sure, it's March 4, 1988.
+[00:39] AGENT: Thanks, Maria. Just to confirm, you're a new patient and want to schedule a routine checkup. Is that correct?
+[00:47] PATIENT: Yes, that's right. I'd like to find the first available slot in the next two weeks, preferably in the morning if possible.
+[00:57] AGENT: There are several morning openings this Thursday, October fifteenth.
+[01:02] AGENT: With Abroker. At Tivot Point Orthopaedics. The earliest is at nine AM. Would you like to book that slot
+[01:10] PATIENT: Oh perfect, yeah, nine AM this Thursday the fifteenth works for me. Could you please book that?
+[01:17] AGENT: Your appointment is set for Thursday, October fifteenth at nine AM with doctor Adam Bricker at Pivot Point Orthopedics. Please bring your photo ID, insurance card, a list of your current medications, and any imaging discs you have.
+[01:34] AGENT: Would you like me to send you a text message with these details?
+[01:36] PATIENT: Thanks, but I think I'm good. Just to confirm, my appointment is Thursday at nine AM, October fifteenth with Dr. Bricker at Pivot Point Orthopedics, right?
+[01:48] AGENT: That's correct. Your appointment is Thursday. October fifteenth at nine AM with doctor Adam Bricker at Pivot Point Orthopedics. You're all set.
+[01:57] PATIENT: Great, thanks so much! Have a wonderful day. Bye!
+[02:04] AGENT: Take care. Goodbye.

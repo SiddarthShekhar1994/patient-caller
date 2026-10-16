@@ -1,0 +1,124 @@
+{
+  "scenario": "hours_address_parking",
+  "title": "Office hours, address and parking",
+  "persona": {
+    "name": "Sofia Russo",
+    "dob": "April 18, 1995",
+    "phone": "555-0162",
+    "voice": "2a12b36c-7f9b-4c3a-9f7a-72731b15323a",
+    "style": "upbeat and casual, says \"awesome\" a lot"
+  },
+  "goals": [
+    {
+      "goal": "Ask what their office hours are, including whether they're open Saturdays.",
+      "reached": true
+    },
+    {
+      "goal": "Ask for the clinic's address.",
+      "reached": true
+    },
+    {
+      "goal": "Ask where to park and whether parking costs anything.",
+      "reached": true
+    }
+  ],
+  "lines": [
+    {
+      "t": 0.5,
+      "end": 6.7,
+      "speaker": "AGENT",
+      "text": "This call may be recorded for quality and training purposes.",
+      "interrupted": false
+    },
+    {
+      "t": 7.0,
+      "end": 9.3,
+      "speaker": "PATIENT",
+      "text": "Hi! I'm",
+      "interrupted": true
+    },
+    {
+      "t": 7.0,
+      "end": 13.3,
+      "speaker": "AGENT",
+      "text": "Thanks for calling Pivot Point Orthopedics. Part of [company]. May I help you today?",
+      "interrupted": false
+    },
+    {
+      "t": 14.3,
+      "end": 19.4,
+      "speaker": "PATIENT",
+      "text": "Hey! Yeah, I was wondering what your office hours are, and if you happen to be open on Saturdays?",
+      "interrupted": false
+    },
+    {
+      "t": 22.3,
+      "end": 30.8,
+      "speaker": "AGENT",
+      "text": "Our clinic is open Monday through Friday, but we are closed on Saturday. Would you like details on our weekday hours or help with scheduling an appointment?",
+      "interrupted": false
+    },
+    {
+      "t": 31.9,
+      "end": 38.5,
+      "speaker": "PATIENT",
+      "text": "Awesome, yeah, the weekday hours would be great. And actually, before anything else, could you tell me your clinic's address?",
+      "interrupted": false
+    },
+    {
+      "t": 41.2,
+      "end": 49.4,
+      "speaker": "AGENT",
+      "text": "Our clinic is located at one two three four Recovery Way, suite two hundred, Austin. Would you like our weekday hours now?",
+      "interrupted": false
+    },
+    {
+      "t": 50.8,
+      "end": 57.5,
+      "speaker": "PATIENT",
+      "text": "Yes, please, that works! And also, where do patients usually park, and is there a cost for parking?",
+      "interrupted": false
+    },
+    {
+      "t": 60.6,
+      "end": 78.1,
+      "speaker": "AGENT",
+      "text": "Patients can park for free in the surface lot right in front of the building. Here are our weekday hours, Monday, Tuesday, and Thursday, Thursday from nine AM to four PM. Wednesday from twelve PM to seven PM, and Friday from nine AM to twelve PM. Is there anything else I can help you with?",
+      "interrupted": false
+    },
+    {
+      "t": 79.0,
+      "end": 86.1,
+      "speaker": "PATIENT",
+      "text": "Awesome, thanks a lot for all that info! That's everything I needed, so I'll let you get back to it. Have a great day! Bye!",
+      "interrupted": false
+    }
+  ],
+  "reply_latency_s": [
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 0.21,
+      "total": 0.82
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.94,
+      "total": 1.54
+    },
+    {
+      "turn_detection": 0.61,
+      "llm_and_tts": 1.04,
+      "total": 1.65
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 1.28,
+      "total": 1.88
+    },
+    {
+      "turn_detection": 0.6,
+      "llm_and_tts": 0.8,
+      "total": 1.4
+    }
+  ]
+}

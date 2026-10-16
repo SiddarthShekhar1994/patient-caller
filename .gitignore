@@ -1,0 +1,10 @@
+# secrets
+.env
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# raw audio left over before encoding; only the .ogg/.mp3 gets committed
+calls/**/*.wav

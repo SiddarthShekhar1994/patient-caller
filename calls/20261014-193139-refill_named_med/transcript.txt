@@ -1,0 +1,15 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopaedics. Part of [company]. How may I help you today?
+[00:13] PATIENT: Hi, I'm calling to request a refill for my meloxicam prescription.
+[00:21] AGENT: I see you're calling from the number we have on file. Am I speaking with Maria?
+[00:26] PATIENT: Actually, this is Linda Morales. Could you please check my records with that name?
+[00:34] AGENT: Please provide your date of birth as well.
+[00:37] PATIENT: Sure, my date of birth is July 30, 1961. Now, about that meloxicam refill—it's the fifteen milligrams strength. Could you please help with that?
+[00:50] AGENT: Just to confirm, I have your name as Linda Morales and your date of birth as July thirtieth nineteen sixty one. Is that correct?
+[01:00] PATIENT: Yes, that's correct. Could you tell me how long it usually takes for refills to reach the pharmacy?
+[01:09] AGENT: Refills are usually processed within one to two business days, The pharmacy may take a bit longer to fill it after that. Would you like to use your phone number to help look up your record? If so, please tell me the number you have on file with us. If you're not sure, I can confirm your name and date of birth again instead.
+[01:26] PATIENT: You can use the phone number I called from, that's 805-555-0144. Also, can you confirm which pharmacy the refill will be sent to? My usual pharmacy is the CVS on Main Street.
+[01:44] AGENT: Have your phone number as eight zero five five five zero one four four and your date of birth as July thirtieth nineteen sixty one. Is that correct?
+[01:54] PATIENT: Yes, that's all correct. Please also confirm that the refill will be sent to the CVS on Main Street.
+Thank you very much. I appreciate your help with the refill and the information about how long it takes. Have [cut off]
+[02:08] AGENT: I can't proceed further right now, but I'll make sure our clinic support team follows up with you. Please stay on the line while I connect you to our patient support team. Transferring you now. Thank you.
+[02:20] PATIENT: Thanks for letting me know. I'll wait for [cut off]

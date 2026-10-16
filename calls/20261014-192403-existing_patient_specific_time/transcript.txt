@@ -1,0 +1,15 @@
+[00:00] AGENT: Thanks for calling Pivot Point Orthopedics. Part of [company]. How may I help you today?
+[00:13] PATIENT: Hi, I'm an existing patient who was seen last year, and I need to schedule a follow-up for my right shoulder.
+[00:21] AGENT: I see you're calling from the number we have on file. Am I speaking with Maria?
+[00:25] PATIENT: No, this is Daniel Kim. Can you help me get that follow-up appointment?
+[00:31] AGENT: Please provide your full date of birth, Daniel.
+[00:33] PATIENT: June 22, 1979. Can I get next Tuesday at two thirty in the afternoon for that appointment?
+[00:43] AGENT: Just to confirm, can you please spell your first and last name for me? I have your date of birth as June twenty second nineteen seventy nine.
+[00:51] PATIENT: Sure, that's D-A-N-I-E-L K-I-M. Is next Tuesday at two thirty available?
+[01:02] AGENT: Would you like me to look up your record using the phone number you have on file with us? If so, please tell me that number. If you're not sure, I can confirm your name and date of birth again. Which would you prefer?
+[01:14] PATIENT: Please look it up with the phone number; it's 805-555-0117. So, is next Tuesday at two thirty free?
+[01:26] AGENT: I have your phone number as eight zero five five five five zero one one seven. And your date of birth as June twenty second nineteen seventy nine. Is that correct?
+[01:37] PATIENT: Yeah, that's right. Do you have an opening next Tuesday at two thirty?
+[01:44] AGENT: I wasn't able to find your record in our system. I can connect you to our patient support team to help with scheduling your follow-up. Please stay on the line. Transferring you now Thank you.
+[01:56] PATIENT: Thanks for trying. I'll [cut off]
+[01:56] AGENT: Hello. You've reached the [company] test line. Goodbye.

@@ -1,0 +1,20 @@
+id: barge_in_dob_correction
+title: Patient cuts in mid-explanation to correct their date of birth
+persona:
+  name: Gerald Okafor
+  dob: August 12, 1957
+  phone: 805-555-0108
+  voice: 5ee9feff-1265-424a-9d7f-8e4d431a12c7  # Cartesia Ronald
+  insurance: Medicare
+  style: older, polite but brisk, a deep unhurried voice
+  extra: The first time they ask your date of birth, you slip and say August twelfth, nineteen seventy-five. Don't correct it on your own; you'll catch it later.
+goals:
+  - Book a follow-up visit for knee pain sometime next week.
+  - Make sure the booking ends up under your real date of birth, August twelfth, nineteen fifty-seven.
+done_when: A visit is booked and they've acknowledged the corrected date of birth.
+flags:
+  barge_in:
+    after_patient_says: ["1975", "seventy-five"]
+    min_agent_speech_s: 2.5
+    instructions: "Cut in right now, mid-sentence, like a person would: 'Oh, sorry, sorry, I gave you the wrong year. It's nineteen fifty-seven, not seventy-five.' Say only that."
+notes: Watch whether the agent stops talking when cut off, updates the date of birth, and picks the thread back up.
